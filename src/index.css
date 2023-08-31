@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/axiforma/Axiforma-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../public/fonts/axiforma/Axiforma-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../public/fonts/axiforma/Axiforma-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../public/fonts/axiforma/Axiforma-Bold.ttf");
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  background: #1A1C1E;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(137, 139, 142);
+  border-radius: 100px;
+}
