@@ -75,6 +75,7 @@ const theme = createTheme({
       main: "#ffffff70",
     },
     accent:{
+      light: "#F4DC0B10",
       main: "#F4DC0B",
       contrastText: "#000000"
     }

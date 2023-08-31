@@ -11,7 +11,7 @@ export const FOOTER_LINKS = [
     path: "/subscriptions",
   },
   {
-    title: "contact",
+    title: "Contact",
     path: "/contact",
   },
   {
