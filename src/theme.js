@@ -70,6 +70,13 @@ const theme = createTheme({
       main: "#ffffff",
       contrastText: "#000000"
     },
+    secondary:{
+      main: "#ffffff70",
+    },
+    accent:{
+      main: "#F4DC0B",
+      contrastText: "#000000"
+    }
   }
 });
 
