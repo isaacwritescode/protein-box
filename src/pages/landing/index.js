@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer";
+import FAQ from "./FAQ";
 import StatBlock from "./StatBlock";
 import Features from "./features";
 import Hero from "./hero";
@@ -10,6 +11,7 @@ export default function Landing(){
   <Sponsors />
   <Features />
   <StatBlock />
+  <FAQ />
   <Footer />
   </>
 }
