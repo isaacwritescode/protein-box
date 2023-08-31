@@ -1,7 +1,8 @@
+import Footer from "../../components/Footer";
+import StatBlock from "./StatBlock";
 import Features from "./features";
 import Hero from "./hero";
 import Sponsors from "./sponsors";
-import StatBlock from "./StatBlock";
 
 export default function Landing(){
   return <>
@@ -9,5 +10,6 @@ export default function Landing(){
   <Sponsors />
   <Features />
   <StatBlock />
+  <Footer />
   </>
 }

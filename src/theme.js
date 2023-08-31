@@ -66,6 +66,7 @@ const theme = createTheme({
     fontFamily: "Axiforma-Private",
   },
   palette: {
+    mode: "dark",
     primary: {
       main: "#ffffff",
       contrastText: "#000000"
