@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import StatBlock from "../landing/StatBlock";
 import EventsCollage from "./EventsCollage";
 import HealthyCorner from "./HealthyCorner";
+import HostEvent from "./HostEvent";
 import Main from "./Main";
 
 export default function About() {
@@ -10,6 +11,7 @@ export default function About() {
     <StatBlock />
     <HealthyCorner />
     <EventsCollage />
+    <HostEvent />
     <Footer />
   </>
 }
