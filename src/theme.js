@@ -28,6 +28,9 @@ const theme = createTheme({
         h6: {
           letterSpacing: "-0.5px",
         },
+        caption: {
+          letterSpacing: "-0.4px"
+        }
       },
     },
     MuiButton: {
@@ -71,14 +74,27 @@ const theme = createTheme({
       main: "#ffffff",
       contrastText: "#000000"
     },
-    secondary:{
-      main: "#ffffff70",
+    primaryInverted: {
+      main: "#000000",
+      contrastText: "#ffffff"
     },
-    accent:{
+    secondary: {
+      main: "#8F9193",
+      inverted: "rgba(0,0,0,0.7)"
+    },
+    accent: {
       light: "#F4DC0B10",
       main: "#F4DC0B",
       contrastText: "#000000"
-    }
+    },
+    red: {
+      main: "#F61067",
+      contrastText: "#ffffff"
+    },
+    green: {
+      main: "#55A61B",
+      contrastText: "#ffffff"
+    },
   }
 });
 

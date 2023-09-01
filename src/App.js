@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/about";
 import HowItWorks from "./pages/how-it-works";
 import Landing from "./pages/landing";
+import Subscriptions from "./pages/subscriptions";
 import theme from "./theme";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         </Route>
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/subscriptions" element={<Subscriptions />} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
