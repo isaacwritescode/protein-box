@@ -16,7 +16,7 @@ export default function EventsCollage() {
     <Box mt={4}>
       <Masonry columns={{ md: 2, xs: 1 }} spacing={2}>
         {EVENTS.map(({ img, title, location }, idx) => {
-          return <Stack spacing={2} key={idx}>
+          return <Stack data-sal="fade-up" data-sal-delay={idx * 100} spacing={2} key={idx}>
             <img src={img} alt="img" />
             <Typography variant={sm ? "h5" : "h6"} >
               {title}

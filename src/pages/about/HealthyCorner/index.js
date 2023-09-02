@@ -10,7 +10,7 @@ export default function HealthyCorner() {
       label="Healthy corner"
       title="Elevate Your Event with the Protein Box Healthy Corner"
     />
-    <Box mt={4}>
+    <Box mt={4} data-sal="fade-up">
       <Grid container columns={{ xs: 6, md: 12 }} spacing={8} alignItems="center">
         <Grid item xs={6}>
           <img src="/images/rectangular-placeholder.png" width="100%" />

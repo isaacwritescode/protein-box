@@ -9,7 +9,7 @@ const Contact = () => {
       <Typography variant="body1" textTransform="uppercase" fontWeight={500} color="accent.main">Contact</Typography>
       <Typography variant={sm ? "h2" : "h3"} >Get in touch</Typography>
     </Stack>
-    <Box my={4} maxWidth={800}>
+    <Box my={4} maxWidth={800} data-sal="fade-up">
       <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <Stack

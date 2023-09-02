@@ -10,7 +10,7 @@ export default function HostEvent() {
       label="Host an event"
       title="Start a Protein Box Revolution!"
     />
-    <Box mt={8}>
+    <Box mt={8} data-sal="fade-up">
       <Grid container columns={{ xs: 6, md: 12 }} spacing={8} alignItems="center">
         <Grid item xs={6}>
           <Typography variant={sm ? "h4" : "h5"} >

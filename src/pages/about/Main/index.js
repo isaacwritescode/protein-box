@@ -14,7 +14,7 @@ export default function Main() {
       <img src="/images/banner-placeholder.png" width="100%" />
     </Box>
     <Box my={8}>
-      <Grid container columns={{ xs: 6, md: 12 }} spacing={2}>
+      <Grid container columns={{ xs: 6, md: 12 }} data-sal="fade-up" spacing={2}>
         <Grid item xs={6}>
           <Typography variant={sm ? "h3" : "h4"} >
             We’ve got a mission, we’re passionate on achieving
