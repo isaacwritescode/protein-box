@@ -9,7 +9,7 @@ export default function Availability() {
     />
 
     <Box mt={8}>
-      <img src="/images/availability/Z&S.png" width="100%" alt="" />
+      <img data-sal="fade-up" src="/images/availability/Z&S.png" width="100%" alt="" />
     </Box>
   </Box>
 }

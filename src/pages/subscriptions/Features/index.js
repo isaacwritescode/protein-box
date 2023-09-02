@@ -18,7 +18,7 @@ export default function Features() {
             color: accent
           })
           return <Grid item xs={4} key={idx}>
-            <Stack spacing={2} p={4} border={`1px solid #ffffff10`} borderRadius={3}>
+            <Stack data-sal="fade-up" data-sal-delay={idx * 100} spacing={2} p={4} border={`1px solid #ffffff10`} borderRadius={3}>
               <Stack height={56} width={56} borderRadius={2} border={`1px solid ${accent}`} alignItems="center" justifyContent="center" bgcolor={accent + "10"}>
                 {icon}
               </Stack>

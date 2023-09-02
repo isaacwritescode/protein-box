@@ -37,7 +37,7 @@ export default function Main() {
           yearly
         } }, idx) => {
           return <Grid item xs={4} key={idx}>
-            {recommended ? <Stack position="relative" gap={3} bgcolor="#F8C300" borderRadius={4} p={4} border="1px solid #ffffff10">
+            {recommended ? <Stack data-sal="fade-up" data-sal-delay={100} position="relative" gap={3} bgcolor="#F8C300" borderRadius={4} p={4} border="1px solid #ffffff10">
               <Stack spacing={1} sx={{ position: "absolute", top: -16, left: "50%", transform: "translateX(-50%)" }}>
                 <Chip label="Recommended" color="primary" sx={{ borderRadius: 3, border: "5px solid #000000", boxSizing: "border-box", p: 1.5 }} />
               </Stack>
@@ -68,7 +68,7 @@ export default function Main() {
               </Stack>
               <Button variant="contained" color="primaryInverted" fluid>Choose this plan</Button>
             </Stack> :
-              <Stack position="relative" gap={3} bgcolor="#ffffff05" borderRadius={4} p={4} border="1px solid #ffffff10">
+              <Stack data-sal="fade-up" data-sal-delay={300} position="relative" gap={3} bgcolor="#ffffff05" borderRadius={4} p={4} border="1px solid #ffffff10">
                 <Stack spacing={1} sx={{ position: "absolute", top: 16, right: 16 }}>
                   {offer && <Chip color="red" label={offer} />}
                   {newPlan && <Chip label="New" color="green" />}
