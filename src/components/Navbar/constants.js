@@ -11,8 +11,4 @@ export const NAVBAR_LINKS = [
     title: "About Us",
     path: "/about-us",
   },
-  {
-    title: "privacy",
-    path: "/privacy",
-  },
 ];
