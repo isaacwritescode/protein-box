@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 // import { Menu } from "./common/Menu";
 import { Box } from "@mui/material";
 import { useLocation } from "react-router-dom";
+import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 
 export default function Layout({
@@ -18,9 +19,9 @@ export default function Layout({
         setIsMenuVisible={setIsMenuVisible}
         userHasScrolled={userHasScrolled}
       />
-      {/* {isMenuVisible &&
+      {isMenuVisible &&
         <Menu setIsMenuVisible={setIsMenuVisible} />
-      } */}
+      }
       <Box pt={pathname === "/" ? 0 : 8}>
         <Outlet />
       </Box>
