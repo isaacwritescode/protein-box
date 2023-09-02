@@ -1,4 +1,5 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
+import { Link } from "../../../components/Link";
 
 export default function Hero() {
   return <Stack
@@ -20,7 +21,12 @@ export default function Hero() {
       <Typography>
         Protein Perfection Delivered to Your Doorstep.
       </Typography>
-      <Button variant="contained">Get yours now</Button>
+      <Link
+        path="/subscriptions"
+        component={
+          <Button variant="contained">Get yours now</Button>
+        }
+      />
     </Stack>
   </Stack>
 }
