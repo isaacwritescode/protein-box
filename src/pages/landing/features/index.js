@@ -11,7 +11,7 @@ export default function Features() {
 
   return <Box maxWidth={1000} mx="auto" width={{ xs: "90%", lg: "100%" }}>
     <Stack spacing={12} py={12}>
-      {FEATURES.map(({ label, title, desc, img, mobileImg, offerings }, idx) =>
+      {FEATURES.map(({ label, title, desc, img, mobileImg, offerings, fullWidthImg }, idx) =>
         <Box key={idx}>
           <Stack direction={matches ? "column" : idx % 2 === 1 ? "row-reverse" : "row"} spacing={{ xs: 3, md: 6 }} alignItems="center">
             <Stack alignItems="start" gap={1} flex={2}>
@@ -42,6 +42,9 @@ export default function Features() {
               </Grid>
             })}
           </Grid>}
+          {fullWidthImg && 
+            <img src={fullWidthImg} width="100%" alt={title} />
+          }
         </Box>
       )
       }

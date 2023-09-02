@@ -6,7 +6,7 @@ export default function Achievements() {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
-  return <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
+  return <Box maxWidth={1000} m="auto" width={{ xs: "90%", lg: "100%" }} pt={12}>
     <Stack alignItems={{
       xs: "start", md: "center"
     }}

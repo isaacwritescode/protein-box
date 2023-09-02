@@ -40,7 +40,7 @@ const Navbar = ({
       {md && <Link
         path="/contact"
         component={
-          <Button color="primary" size="small" variant="outlined">Contact us</Button>
+          <Button color="primary" size="medium" variant={!userHasScrolled ? "outlined" : "contained"}>Contact us</Button>
         }
       />}
       {md || (
