@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer";
 import Availability from "./Availability";
 import Features from "./Features";
 import Main from "./Main";
@@ -8,6 +7,6 @@ export default function Subscriptions() {
     <Main />
     <Availability />
     <Features />
-    <Footer />
+    
   </>
 }

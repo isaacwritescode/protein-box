@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer";
 import Achievements from "./Achievements";
 import FAQ from "./FAQ";
 import StatBlock from "./StatBlock";
@@ -16,6 +15,5 @@ export default function Landing() {
     <Achievements />
     <FAQ />
     <Testimonials />
-    <Footer />
   </>
 }

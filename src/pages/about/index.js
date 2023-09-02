@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer";
 import StatBlock from "../landing/StatBlock";
 import EventsCollage from "./EventsCollage";
 import HealthyCorner from "./HealthyCorner";
@@ -12,6 +11,6 @@ export default function About() {
     <HealthyCorner />
     <EventsCollage />
     <HostEvent />
-    <Footer />
+    
   </>
 }
