@@ -11,7 +11,8 @@ export default function Hero() {
       height: "100vh",
     }}
   >
-    <Stack textAlign="center" justifyContent="center" alignItems="center" gap={2}>
+    <Stack data-sal="fade-up"
+      textAlign="center" justifyContent="center" alignItems="center" gap={2}>
       <Typography textTransform="uppercase">We are</Typography>
       <Box>
         <img src="/images/logo.png" width="100%" />

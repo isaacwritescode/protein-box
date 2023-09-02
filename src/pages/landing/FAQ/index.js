@@ -1,6 +1,7 @@
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useState } from "react";
+import Header from "../../../components/Header";
 import { AccordionGroup } from "./AccordionGroup";
 
 const FAQ = () => {
@@ -18,13 +19,13 @@ const FAQ = () => {
   >
     <Box>
       <Stack spacing={4}>
-        <Stack alignItems={{
-          xs: "start", md: "center"
-        }} gap={1} flex={2}>
-          <Typography variant="body1" textTransform="uppercase" fontWeight={500} color="accent.main">Frequently asked questions</Typography>
-          <Typography variant={sm ? "h2" : "h3"} > Let’s see what’s on your mind</Typography>
-        </Stack>
-        <AccordionGroup expanded={expanded} handleChange={handleChange} />
+        <Header
+          label="Frequently asked questions"
+          title="Let’s see what’s on your mind"
+        />
+        <Box data-sal="fade-up">
+          <AccordionGroup expanded={expanded} handleChange={handleChange} />
+        </Box>
       </Stack>
     </Box >
   </Box >

@@ -1,5 +1,6 @@
 import { Masonry } from "@mui/lab";
-import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
+import Header from "../../../components/Header";
 import { Card } from "./card";
 import { TESTIMONIALS } from "./constants";
 
@@ -16,15 +17,10 @@ const Testimonials = () => {
         overflow="hidden"
       >
         <Stack spacing={4}>
-        <Stack alignItems={{
-          xs: "start", md: "center"
-        }} 
-        textAlign={{xs: "start", md: "center"}}
-        gap={1} flex={2}>
-          <Typography variant="body1" textTransform="uppercase" fontWeight={500} color="accent.main">Testimonials</Typography>
-          <Typography variant={sm ? "h2" : "h3"} >Don’t just take our word for it,
-see what our clients have to say</Typography>
-        </Stack>
+          <Header
+            label="Testimonials"
+            title="Don’t just take our word for it, see what our clients have to say"
+          />
           <Box width="100%">
             <Masonry columns={{ xl: 3, md: 2, xs: 1 }} spacing={2}>
               {TESTIMONIALS.map(({ name, description, review, image }, idx) => (

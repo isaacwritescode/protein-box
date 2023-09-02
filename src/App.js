@@ -1,6 +1,8 @@
 import { ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import sal from "sal.js";
+import "sal.js/dist/sal.css";
 import Layout from "./layout";
 import About from "./pages/about";
 import Contact from "./pages/contact";
@@ -27,6 +29,13 @@ function App() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [isMenuVisible]);
+
+  useEffect(() => {
+    sal({
+      threshold: 0.3,
+    });
+  }, [pathname]);
+
 
   return <ThemeProvider theme={theme}>
     <Routes>

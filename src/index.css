@@ -86,3 +86,14 @@ body {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
+[data-sal|="fade-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-sal|="fade-up"].sal-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

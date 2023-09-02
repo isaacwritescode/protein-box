@@ -13,7 +13,7 @@ export default function Features() {
     <Stack spacing={12} py={12}>
       {FEATURES.map(({ label, title, desc, img, mobileImg, offerings, fullWidthImg }, idx) =>
         <Box key={idx}>
-          <Stack direction={matches ? "column" : idx % 2 === 1 ? "row-reverse" : "row"} spacing={{ xs: 3, md: 6 }} alignItems="center">
+          <Stack data-sal="fade-up" direction={matches ? "column" : idx % 2 === 1 ? "row-reverse" : "row"} spacing={{ xs: 3, md: 6 }} alignItems="center">
             <Stack alignItems="start" gap={1} flex={2}>
               <Typography variant="body1" textTransform="uppercase" fontWeight={500} color="accent.main">{label}</Typography>
               <Typography variant="h3">{title}</Typography>
@@ -29,7 +29,7 @@ export default function Features() {
               icon = cloneElement(icon, {
                 color: accent
               })
-              return <Grid item xs={4} key={idx}>
+              return <Grid item xs={4} key={idx} data-sal="fade-up" data-sal-delay={idx * 100}>
                 <Stack position="relative" spacing={3} direction="row" bgcolor="#ffffff05" borderRadius={2} p={3} border="1px solid #ffffff10" alignItems="center">
                   <Stack sx={{ aspectRatio: "1/1", width: 64 }} borderRadius={2} border={`1px solid ${accent}`} alignItems="center" justifyContent="center" bgcolor={accent + "10"}>
                     {icon}
@@ -43,7 +43,7 @@ export default function Features() {
             })}
           </Grid>}
           {fullWidthImg && 
-            <img src={fullWidthImg} width="100%" alt={title} />
+            <img data-sal="fade-up" src={fullWidthImg} width="100%" alt={title} />
           }
         </Box>
       )

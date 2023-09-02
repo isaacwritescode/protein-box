@@ -1,5 +1,6 @@
 import { Masonry } from "@mui/lab";
-import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
+import Header from "../../../components/Header";
 import ACHIEVEMENTS from "./constants";
 
 export default function Achievements() {
@@ -12,14 +13,16 @@ export default function Achievements() {
     }}
       textAlign={{ xs: "start", md: "center" }}
       gap={1} flex={2}>
-      <Typography variant="body1" textTransform="uppercase" fontWeight={500} color="accent.main">Achievements</Typography>
-      <Typography variant={sm ? "h2" : "h3"} >We're getting noticed!</Typography>
-      <Typography variant="body1" fontWeight={500} color="secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</Typography>
+      <Header
+        label="Achievements"
+        title="We're getting noticed!"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      />
     </Stack>
     <Box mt={4}>
       <Masonry columns={{ md: 2, xs: 1 }} spacing={2}>
         {ACHIEVEMENTS.map(({ img }, idx) => {
-          return <img src={img} alt="img" />
+          return <img src={img} alt="img" data-sal="fade-up" />
         })}
       </Masonry>
     </Box>
