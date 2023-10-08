@@ -1,7 +1,7 @@
 import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 
-export default function Header({ label, title, desc }) {
+export default function Header({ label, title, desc, ...props }) {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
