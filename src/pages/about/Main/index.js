@@ -5,27 +5,35 @@ export default function Main() {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
-  return <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
-    <Header
-      label="About us"
-      title="Let’s tell you a little more about us"
-    />
-    <Box mt={4}>
-      <img src="/images/banner-placeholder.png" width="100%" />
-    </Box>
-    <Box my={8}>
-      <Grid container columns={{ xs: 6, md: 12 }} data-sal="fade-up" spacing={2}>
-        <Grid item xs={6}>
-          <Typography variant={sm ? "h3" : "h4"} >
-            We’ve got a mission, we’re passionate on achieving
-          </Typography>
+  return (
+    <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
+      <Header label="About us" title="Let’s tell you a little more about us" />
+      <Box mt={4}>
+        <img src="/images/banner-placeholder.png" width="100%" />
+      </Box>
+      <Box my={8}>
+        <Grid
+          container
+          columns={{ xs: 6, md: 12 }}
+          data-sal="fade-up"
+          spacing={2}
+        >
+          <Grid item xs={6}>
+            <Typography variant={sm ? "h3" : "h4"}>
+              Think Health Think Protein Box
+            </Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Typography variant="body1" fontWeight={500} color="secondary">
+              Mission: Our mission is to make delicious and healthy meals
+              accessible to health-conscious consumers. We aspire to motivate
+              consumers and help them assess their food requirements, craft and
+              curate their meals with expert guidance If you have the will ...
+              we have the meal!
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="body1" fontWeight={500} color="secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
-          </Typography>
-        </Grid>
-      </Grid>
+      </Box>
     </Box>
-  </Box>
+  );
 }
