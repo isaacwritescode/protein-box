@@ -20,7 +20,7 @@ export default function Stepline() {
       <Typography variant="body1" textTransform="uppercase" fontWeight={500} color="accent.main">Try it now</Typography>
       <Typography variant={sm ? "h2" : "h3"} >Get your protein box in 3 simple steps</Typography>
     </Stack>
-    <Box mt={12}>
+    <Box mt={12} maxWidth={800} mx="auto">
       {ROADMAP.map(({ title, desc, img }, idx) =>
         <InView
           key={idx}
