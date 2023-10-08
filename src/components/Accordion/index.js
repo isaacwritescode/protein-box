@@ -7,16 +7,22 @@ import Typography from "@mui/material/Typography";
 import { AddCircleOutline, RemoveCircleOutline } from "@mui/icons-material";
 import { useMediaQuery } from "@mui/material";
 
-
-
 const CustomAccordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square sx={{
-    "&.Mui-expanded": {
-      bgcolor: "#ffffff10",
-      borderRadius: 4
-    }, bgcolor: "transparent",
-    borderRadius: 0
-  }} {...props} />
+  <MuiAccordion
+    disableGutters
+    elevation={0}
+    square
+    sx={{
+      "&.Mui-expanded": {
+        bgcolor: "#ffffff05",
+        border: "1px solid #ffffff10",
+        borderRadius: 2,
+      },
+      bgcolor: "transparent",
+      borderRadius: 0,
+    }}
+    {...props}
+  />
 ))(({ theme, expanded, md }) => ({
   "&:before": {
     display: "none",
@@ -30,13 +36,23 @@ const CustomAccordion = styled((props) => (
 
 const AccordionSummary = styled(({ expanded, ...props }) => (
   <MuiAccordionSummary
-    expandIcon={expanded ? <RemoveCircleOutline sx={{
-      fontSize: "1.5rem",
-      color: "white.main",
-    }} /> : <AddCircleOutline sx={{
-      fontSize: "1.5rem",
-      color: "white.main",
-    }} />}
+    expandIcon={
+      expanded ? (
+        <RemoveCircleOutline
+          sx={{
+            fontSize: "1.5rem",
+            color: "white.main",
+          }}
+        />
+      ) : (
+        <AddCircleOutline
+          sx={{
+            fontSize: "1.5rem",
+            color: "white.main",
+          }}
+        />
+      )
+    }
     {...props}
   />
 ))(({ theme }) => ({
@@ -49,8 +65,8 @@ const AccordionSummary = styled(({ expanded, ...props }) => (
     marginRight: theme.spacing(2),
   },
   "& .MuiAccordionSummary-content > *": {
-    fontWeight: 600
-  }
+    fontWeight: 600,
+  },
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
@@ -63,12 +79,19 @@ export default function Accordion({ title, desc, expanded, onChange }) {
   return (
     <CustomAccordion expanded={expanded} onChange={onChange} md={md}>
       <AccordionSummary expanded={expanded}>
-        <Typography variant="h6" sx={{
-          color: "white.main",
-        }}>{title}</Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            color: "white.main",
+          }}
+        >
+          {title}
+        </Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography variant="body1" color="#ffffff80">{desc}</Typography>
+        <Typography variant="body1" color="#ffffff80">
+          {desc}
+        </Typography>
       </AccordionDetails>
     </CustomAccordion>
   );

@@ -7,7 +7,7 @@ export default function Achievements() {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
-  return <Box maxWidth={1000} m="auto" width={{ xs: "90%", lg: "100%" }} pt={12}>
+  return <Box maxWidth={1000} m="auto" width={{ xs: "90%", lg: "100%" }} py={12}>
     <Stack alignItems={{
       xs: "start", md: "center"
     }}
@@ -20,7 +20,7 @@ export default function Achievements() {
       />
     </Stack>
     <Box mt={4}>
-      <Masonry columns={{ md: 2, xs: 1 }} spacing={2}>
+      <Masonry columns={{ md: 4, xs: 2 }} spacing={2}>
         {ACHIEVEMENTS.map(({ img }, idx) => {
           return <img src={img} alt="img" data-sal="fade-up" />
         })}

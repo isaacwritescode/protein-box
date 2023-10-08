@@ -13,7 +13,7 @@ const FAQ = () => {
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   return <Box
     maxWidth={1000}
-    width={{ xs: "90%", lg: "80%" }}
+  width={{ xs: "90%", lg: "80%" }}
     pt={16}
     m="auto"
   >

@@ -1,5 +1,5 @@
 import Achievements from "./Achievements";
-import FAQ from "./FAQ";
+import Locations from "./Locations";
 import StatBlock from "./StatBlock";
 import Features from "./features";
 import Hero from "./hero";
@@ -11,9 +11,9 @@ export default function Landing() {
     <Hero />
     <Sponsors />
     <Features />
-    <StatBlock />
+    <Locations />
     <Achievements />
-    <FAQ />
+    <StatBlock />
     <Testimonials />
   </>
 }
