@@ -11,7 +11,8 @@ export default function Main() {
       <Box mt={4}>
       <video
         style={{
-          borderRadius: 24
+          borderRadius: 24,
+          width: "100%"
         }}
         autoPlay={true}
         loop

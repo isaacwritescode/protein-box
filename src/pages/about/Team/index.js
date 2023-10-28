@@ -32,11 +32,11 @@ const Team = () => {
                   }}
                 />
                 <Stack pt={2}>
-                  <Typography variant="body1" fontWeight={500}>
+                  <Typography variant="h6" fontWeight={500}>
                     {name}
                   </Typography>
                   <Typography
-                    variant="body2"
+                    variant="body1"
                     fontWeight={500}
                     color="secondary"
                   >
@@ -45,7 +45,7 @@ const Team = () => {
                   <Box my={2}>
                     <Divider />
                   </Box>
-                  <Typography variant="body2" color="secondary">
+                  <Typography variant="body1" color="secondary">
                     {desc}
                   </Typography>
                 </Stack>
