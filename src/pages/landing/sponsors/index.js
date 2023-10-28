@@ -3,7 +3,7 @@ import SPONSORS from "./constants";
 import { useState } from "react";
 
 export default function Sponsors() {
-  const [open, setOpen] = useState(false);
+ 
   return (
     <Stack width="100%" bgcolor="#1a1c1e">
       <Stack

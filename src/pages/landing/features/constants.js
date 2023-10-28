@@ -14,8 +14,7 @@ const FEATURES = [
     title:
       "Our menu is designed to meet all your healthy eating goals, tastefully",
     desc: "Protein Box is your one stop shop for healthy eating",
-    img: "/images/features/02.png",
-    mobileImg: "/images/features/02-mobile.png",
+    slideshow: true,
     offerings: [
       {
         icon: <TickCircle />,
