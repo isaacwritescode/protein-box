@@ -27,7 +27,14 @@ export default function Achievements() {
       <Box mt={4}>
         <Masonry columns={{ md: 3, xs: 2 }} spacing={2}>
           {ACHIEVEMENTS.map(({ img }, idx) => {
-            return <img src={img} alt="img" data-sal="fade-up" />;
+            return (
+              <img
+                src={img}
+                alt="img"
+                data-sal="fade-up"
+                style={{ borderRadius: 24 }}
+              />
+            );
           })}
         </Masonry>
       </Box>

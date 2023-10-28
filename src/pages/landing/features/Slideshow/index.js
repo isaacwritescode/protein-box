@@ -1,5 +1,4 @@
 import ReactImageGallery from "react-image-gallery";
-import { Fade } from "react-slideshow-image";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Box } from "@mui/material";
 
