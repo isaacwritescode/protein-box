@@ -14,10 +14,10 @@ export default function HostEvent() {
       <Grid container columns={{ xs: 6, md: 12 }} spacing={8} alignItems="center">
         <Grid item xs={6}>
           <Typography variant={sm ? "h4" : "h5"} >
-            This is a short title
+            Register now
           </Typography>
-          <Typography variant="body1" fontWeight={500} color="secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+          <Typography variant="body1" fontWeight={500} width="80%" color="secondary">
+           Fill out your details & we'll get back to you shortly. We're glad you're here!
           </Typography>
         </Grid>
         <Grid item xs={6}>

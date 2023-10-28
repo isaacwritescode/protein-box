@@ -9,7 +9,17 @@ export default function Main() {
     <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
       <Header label="About us" title="Let’s tell you a little more about us" />
       <Box mt={4}>
-        <img src="/images/banner-placeholder.png" width="100%" />
+      <video
+        style={{
+          borderRadius: 24
+        }}
+        autoPlay={true}
+        loop
+        muted
+        preload="metadata"
+      >
+        <source src="/videos/promo.mp4" type="video/mp4" />
+      </video>
       </Box>
       <Box my={8}>
         <Grid
