@@ -1,17 +1,17 @@
 export const LOCATIONS = [
   {
     title: "Goa",
-    desc: "Lorem ipsum dolor sit amet, consectetur",
+    desc: "Coastal delight with protein-packed flavors by Protein Box",
     img: "/images/locations/goa.png",
   },
   {
     title: "Gurgaon",
-    desc: "Lorem ipsum dolor sit amet, consectetur",
+    desc: "Urban energy boost with Protein Box's protein-rich meals",
     img: "/images/locations/gurgaon.png",
   },
   {
     title: "Nagpur",
-    desc: "Lorem ipsum dolor sit amet, consectetur",
+    desc: "Central India's protein paradise, courtesy of Protein Box",
     img: "/images/locations/nagpur.png",
   },
 ];

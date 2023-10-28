@@ -3,9 +3,22 @@ import { Rating, Stack, Typography } from "@mui/material";
 
 export const Card = ({ name, description, review, image }) => {
   return (
-    <Stack spacing={3} p={4} borderRadius={2} border="1px solid #ffffff20" bgcolor="#ffffff05" alignItems="start">
+    <Stack
+      spacing={3}
+      p={4}
+      borderRadius={2}
+      border="1px solid #ffffff20"
+      bgcolor="#ffffff05"
+      alignItems="start"
+    >
       <Stack direction="row" spacing={2} alignItems="center">
-        <img src={image} width="64px" height="64px" alt="" />
+        <img
+          style={{ borderRadius: "100%", aspectRatio: "1/1" }}
+          src={image}
+          width="64px"
+          height="64px"
+          alt=""
+        />
         <Stack>
           <Typography variant="h6" fontWeight={600}>
             {name}
