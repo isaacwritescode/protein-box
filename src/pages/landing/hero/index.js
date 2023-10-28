@@ -32,6 +32,8 @@ export default function Hero() {
         textAlign="center"
         justifyContent="center"
         alignItems="center"
+        width="60%"
+        mx="auto"
         gap={2}
       >
         <Typography textTransform="uppercase">We are</Typography>
