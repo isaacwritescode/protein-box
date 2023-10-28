@@ -6,21 +6,15 @@ import { Box } from "@mui/material";
 const Slideshow = () => {
   const images = [
     {
-      original: "images/food/1.png",
+      original: "images/food/1.jpg",
     },
     {
-      original: "images/food/2.png",
+      original: "images/food/2.jpg",
     },
     {
-      original: "images/food/3.png",
+      original: "images/food/3.jpg",
     },
   ];
-
-  const fadeProps = {
-    indicators: true,
-    arrows: false,
-    duration: 2000,
-  };
 
   return (
     <Box borderRadius={4} overflow="hidden">
