@@ -11,6 +11,7 @@ const Contact = () => {
     </Stack>
     <Box my={4} maxWidth={800} data-sal="fade-up">
       <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
         <Stack
           spacing={4}
           borderRadius={2}
