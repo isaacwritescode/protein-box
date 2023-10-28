@@ -10,7 +10,6 @@ export default function Sponsors() {
         width={{ xs: "90%", lg: "100%" }}
         direction="row"
         alignItems="center"
-        justifyContent="space-between"
         maxWidth={1000}
         mx="auto"
         gap={{ xs: 4, md: 8 }}
