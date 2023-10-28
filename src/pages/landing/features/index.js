@@ -7,7 +7,6 @@ import FEATURES from "./constants";
 export default function Features() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(matches);
 
   return (
     <Box maxWidth={1000} mx="auto" width={{ xs: "90%", lg: "100%" }}>
@@ -35,10 +34,11 @@ export default function Features() {
                   >
                     {label}
                   </Typography>
-                  <Typography variant="h3">{title}</Typography>
+                  <Typography variant="h3" fontWeight={500}>
+                    {title}
+                  </Typography>
                   <Typography
                     variant="body1"
-                    fontWeight={500}
                     color="secondary"
                   >
                     {desc}
@@ -91,6 +91,7 @@ export default function Features() {
                             </Typography>
                             <Typography
                               variant="h5"
+                              fontWeight={600}
                               textTransform="uppercase"
                               sx={{
                                 background: `linear-gradient(${gradient})`,

@@ -25,8 +25,7 @@ const StatBlock = () => {
       <Box
         width={{ xs: "90%", lg: "75%" }}
         bgcolor="#ffffff05"
-        borderRadius={2}
-        border="1px solid #ffffff10"
+        borderRadius={4}
         p={6}
         boxSizing="border-box"
         maxWidth={1000}

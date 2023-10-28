@@ -33,7 +33,7 @@ export const Card = ({ name, description, review, image }) => {
         emptyIcon={<Star style={{ zIndex: -1 }} fontSize="inherit" />}
         readOnly
       />
-      <Typography variant="body2" color="secondary" fontWeight={400}>
+      <Typography variant="body2" color="secondary">
         {review}
       </Typography>
     </Stack>
