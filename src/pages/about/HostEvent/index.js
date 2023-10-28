@@ -18,8 +18,7 @@ export default function HostEvent() {
     <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
       <Header label="Host an event" title="Start a Protein Box Revolution!" />
       <Box my={8} data-sal="fade-up" maxWidth={800} mx="auto">
-        <form name="host-event" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
+        <form name="event" method="POST" data-netlify="true">
           <Stack spacing={4} borderRadius={2} width="100%">
             <Stack direction="row" spacing={2}>
               <TextField

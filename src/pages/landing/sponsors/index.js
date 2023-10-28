@@ -1,7 +1,9 @@
 import { Box, Stack, Tooltip } from "@mui/material";
 import SPONSORS from "./constants";
+import { useState } from "react";
 
 export default function Sponsors() {
+  const [open, setOpen] = useState(false);
   return (
     <Stack width="100%" bgcolor="#1a1c1e">
       <Stack
@@ -23,7 +25,9 @@ export default function Sponsors() {
             data-sal-delay={idx * 100}
             sx={{ cursor: "pointer" }}
           >
-            <Tooltip title={desc}>
+            <Tooltip
+              title={desc}
+            >
               <img src={icon} height={48} alt={title} width="100%" />
             </Tooltip>
           </Box>
