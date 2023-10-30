@@ -1,8 +1,8 @@
 const EVENTS = [
   {
-    title: "Event #1",
+    title: "IFFI 2022",
     location: "Panjim, Goa",
-    img: "/images/rectangular-placeholder.png"
+    img: "/images/achievements/iffi-1.jpg"
   },
   {
     title: "Event #2",

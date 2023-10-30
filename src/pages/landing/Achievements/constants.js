@@ -6,6 +6,9 @@ const ACHIEVEMENTS = [
     img: "/images/achievements/modi-1.jpg"
   },
   {
+    img: "/images/achievements/tr-1.jpg"
+  },
+  {
     img: "/images/achievements/pitch-1.jpg"
   },
   {
@@ -16,9 +19,6 @@ const ACHIEVEMENTS = [
   },
   {
     img: "/images/achievements/president-1.jpg"
-  },
-  {
-    img: "/images/achievements/tr-1.jpg"
   },
 ]
 

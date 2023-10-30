@@ -32,7 +32,7 @@ export default function Achievements() {
                 src={img}
                 alt="img"
                 data-sal="fade-up"
-                style={{ borderRadius: 24 }}
+                style={{ borderRadius: 16 }}
               />
             );
           })}
