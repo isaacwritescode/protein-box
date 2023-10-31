@@ -1,6 +1,6 @@
 const TEAM = [
   {
-    name: "Utpal J. Ghost",
+    name: "Utpal J. Ghosh",
     designation: "Founder",
     desc: "15+ years of Corporate Experience. Serial Entrepreneur",
     img: "/images/team/utpal-ghosh.jpg",
