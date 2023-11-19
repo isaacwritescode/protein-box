@@ -15,24 +15,29 @@ export default function EventsCollage() {
         title="Fueling Health at Every Occasion - Protein Box Events"
       />
       <Box mt={4}>
-        <Masonry columns={{ md: 2, xs: 1 }} spacing={2}>
-          {EVENTS.map(({ img, title, location }, idx) => {
+        <Masonry columns={{ md: 2, xs: 1 }} spacing={4}>
+          {EVENTS.map(({ img, title, desc, location }, idx) => {
             return (
               <Stack
                 data-sal="fade-up"
                 data-sal-delay={idx * 100}
-                spacing={2}
+                spacing={4}
                 key={idx}
               >
-                <img src={img} alt="img" style={{ borderRadius: 16}} />
-                <Typography variant={sm ? "h5" : "h6"}>{title}</Typography>
-                <Stack direction="row" spacing={1}>
-                  <Box color="accent.main">
-                    <Location />
-                  </Box>
-                  <Typography variant={sm ? "body1" : "body2"}>
-                    {location}
+                <img src={img} alt="img" style={{ borderRadius: 16 }} />
+                <Stack spacing={1}>
+                  <Typography variant={sm ? "h6" : "h6"}>{title}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {desc}
                   </Typography>
+                  <Stack direction="row" spacing={1}>
+                    <Box color="accent.main">
+                      <Location />
+                    </Box>
+                    <Typography variant={sm ? "body1" : "body2"}>
+                      {location}
+                    </Typography>
+                  </Stack>
                 </Stack>
               </Stack>
             );

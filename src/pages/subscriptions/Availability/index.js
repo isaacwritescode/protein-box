@@ -30,29 +30,24 @@ export default function Availability() {
         my={8}
       >
         <Stack
-          mt={8}
           justifyContent="space-between"
-          spacing={8}
+          alignItems="center"
           maxWidth={800}
           mx="auto"
-          direction={{ xs: "column", sm: "row" }}
+          spacing={8}
+          direction={{ xs: "column", md: "row" }}
         >
           {AVAILABILITY.map(({ icon, title, main }, idx) => {
             return (
               <>
                 <Stack spacing={4} alignItems="center" justifyContent="center">
                   <img src={icon} height={120} alt={title} />
-                  {main ? (
-                    <Button variant="contained">Order directly</Button>
-                  ) : (
-                    <Button variant="outlined">Order now</Button>
-                  )}
+                  {main && <Button variant="contained">Order directly</Button>}
                 </Stack>
                 {idx !== AVAILABILITY.length - 1 && sm && (
                   <Divider
                     flexItem
-                    orientation={{ sm: "vertical" }}
-                    sx={{ height: 120 }}
+                    orientation={sm ? "vertical" : "horizontal"}
                   />
                 )}
               </>

@@ -19,8 +19,8 @@ export default function Achievements() {
         flex={2}
       >
         <Header
-          label="Achievements"
-          title="We're getting noticed!"
+          label="HEALTHY MOMENTS"
+          title="Sneak peek into the Protein Box world"
           desc="Here's our wall of achievements throughout the years"
         />
       </Stack>

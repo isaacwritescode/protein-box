@@ -5,7 +5,7 @@ export const LOCATIONS = [
     img: "/images/locations/goa.png",
   },
   {
-    title: "Gurgaon",
+    title: "Gurugram",
     desc: "Urban energy boost with Protein Box's protein-rich meals",
     img: "/images/locations/gurgaon.png",
   },
