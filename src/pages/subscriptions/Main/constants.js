@@ -14,7 +14,7 @@ const PLANS = {
       ],
     },
     {
-      title: "Brown Rice",
+      title: "Lunch Boxes",
       desc: "Brown Rice Lunch Box Subscription",
       price: "₹6,500",
       offer: null,
