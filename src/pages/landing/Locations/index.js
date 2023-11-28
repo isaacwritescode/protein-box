@@ -22,8 +22,18 @@ const Locations = () => {
           >
             {LOCATIONS.map(({ img, title, desc }, idx) => {
               return (
-                <Stack key={idx} spacing={2} flex={1} data-sal="fade-up" data-sal-delay={idx * 100}>
-                  <img width="100%" src={img} />
+                <Stack
+                  key={idx}
+                  spacing={2}
+                  flex={1}
+                  data-sal="fade-up"
+                  data-sal-delay={idx * 100}
+                >
+                  <img
+                    width="100%"
+                    style={{ borderRadius: 8, aspectRatio: "2/1.5" }}
+                    src={img}
+                  />
                   <Box>
                     <Typography variant="h6">{title}</Typography>
                     <Typography variant="body2" color="text.secondary">
