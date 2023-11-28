@@ -7,11 +7,11 @@ export const LOCATIONS = [
   {
     title: "Gurugram",
     desc: "Urban energy boost with Protein Box's protein-rich meals",
-    img: "/images/locations/gurgaon.png",
+    img: "/images/locations/gurugram.jpeg",
   },
   {
     title: "Nagpur",
     desc: "Central India's protein paradise, courtesy of Protein Box",
-    img: "/images/locations/nagpur.png",
+    img: "/images/locations/nagpur.jpg",
   },
 ];
