@@ -10,6 +10,8 @@ import HowItWorks from "./pages/how-it-works";
 import Landing from "./pages/landing";
 import Subscriptions from "./pages/subscriptions";
 import theme from "./theme";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   const { pathname } = useLocation();
@@ -37,7 +39,8 @@ function App() {
   }, [pathname]);
 
 
-  return <ThemeProvider theme={theme}>
+  return <Provider store={store}>
+    <ThemeProvider theme={theme}>
     <Routes>
       <Route path="/"
         element={
@@ -55,7 +58,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
-  </ThemeProvider>
+  </ThemeProvider>f
+  </Provider>
 }
 
 export default App;
