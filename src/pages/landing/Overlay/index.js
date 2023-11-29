@@ -22,16 +22,13 @@ const Overlay = ({ isPopupVisible, visiblePopup, hidePopup }) => {
         placeItems: "center",
       }}
     >
-      <Box bgcolor="black">
+      <Box bgcolor="black" width={"95%"} m="auto" borderRadius={4} overflow="hidden">
         <Stack
           maxWidth={400}
           sx={{ bgcolor: "#ffffff20" }}
-          width={"95%"}
-          m="auto"
           textAlign="center"
           p={8}
           boxSizing={"border-box"}
-          borderRadius={4}
           gap={2}
           position="relative"
         >
