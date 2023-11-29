@@ -10,9 +10,8 @@ const FEATURES = [
     fullWidthImg: "/images/features/pb-boxes.png",
   },
   {
-    label: "Wide variety",
-    title:
-      "Our menu is designed to meet all your healthy eating goals, tastefully",
+    label: "They trust us",
+    title: "National Atheletes, Sportspersons & Bodybuilders trust us",
     desc: "Protein Box is your one stop shop for healthy eating",
     slideshow: true,
     offerings: [
