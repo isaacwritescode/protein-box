@@ -22,7 +22,7 @@ const Overlay = ({ isPopupVisible, visiblePopup, hidePopup }) => {
         placeItems: "center",
       }}
     >
-      {visiblePopup !== "form" ? (
+      {visiblePopup.substring(0, 4) !== "form" ? (
         <Stack
           onClick={() => hidePopup()}
           mx="auto"

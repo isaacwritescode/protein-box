@@ -17,12 +17,14 @@ import {
 import { useState } from "react";
 import { CloseOutlined } from "@mui/icons-material";
 import dayjs from "dayjs";
+import { connect } from "react-redux";
 
-export default function Form({ hidePopup }) {
+function Form({ hidePopup, visiblePopup }) {
   const [name, setName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [city, setCity] = useState("");
   const [fitnessGoals, setFitnessGoals] = useState("");
+  const [subscription, setSubscription] = useState(visiblePopup.substring(4));
   const [foodType, setFoodType] = useState(null);
   const [lunchTime, setLunchTime] = useState(dayjs("2022-04-17T14:30"));
   const [dinnerTime, setDinnerTime] = useState(dayjs("2022-04-17T19:30"));
@@ -45,6 +47,7 @@ export default function Form({ hidePopup }) {
       dinnerTime,
       allergies,
       standingInstructions,
+      subscription,
     };
 
     // Function to handle empty or null values
@@ -55,12 +58,12 @@ export default function Form({ hidePopup }) {
       I'm ${formatValue(details.name)},
       Looking for you to assist me with my fitness goals.
       Here are my details:
-
       Name: ${formatValue(details.name)}
       Mobile Number: ${formatValue(details.mobileNumber)}
       City: ${formatValue(details.city)}
       Fitness Goals: ${formatValue(details.fitnessGoals)}
       Food Type: ${formatValue(details.foodType)}
+      Subscription: ${formatValue(details.subscription)}
       Lunch Time: ${formatValue(details.lunchTime)}
       Dinner Time: ${formatValue(details.dinnerTime)}
       Allergies: ${formatValue(details.allergies)}
@@ -241,3 +244,9 @@ export default function Form({ hidePopup }) {
     </Stack>
   );
 }
+
+const mapStateToProps = (state) => ({
+  visiblePopup: state.popup.visiblePopup,
+});
+
+export default connect(mapStateToProps)(Form);

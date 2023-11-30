@@ -23,8 +23,8 @@ function Main({ showPopup }) {
 
   const [primeOption, setPrimeOption] = useState(false);
 
-  const handleClick = () => {
-    showPopup("form");
+  const handleClick = (value) => {
+    showPopup("form" + value);
   };
 
   return (
@@ -70,6 +70,7 @@ function Main({ showPopup }) {
               { title, desc, features, recommended, offer, newPlan, price },
               idx
             ) => {
+              const plan = `${primeOption ? "Prime" : "Regular"} - ${desc}`;
               return (
                 <Grid item xs={4} key={idx}>
                   {recommended ? (
@@ -153,7 +154,12 @@ function Main({ showPopup }) {
                           );
                         })}
                       </Stack>
-                      <Button onClick={handleClick} variant="contained" color="primaryInverted" fluid>
+                      <Button
+                        onClick={() => handleClick(plan)}
+                        variant="contained"
+                        color="primaryInverted"
+                        fluid
+                      >
                         Choose this plan
                       </Button>
                     </Stack>
@@ -223,7 +229,11 @@ function Main({ showPopup }) {
                           );
                         })}
                       </Stack>
-                      <Button variant="outlined" onClick={handleClick} fluid>
+                      <Button
+                        variant="outlined"
+                        onClick={() => handleClick(plan)}
+                        fluid
+                      >
                         Choose this plan
                       </Button>
                     </Stack>
