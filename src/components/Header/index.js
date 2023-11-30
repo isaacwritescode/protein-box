@@ -25,7 +25,7 @@ export default function Header({ label, title, desc, ...props }) {
         >
           {label}
         </Typography>
-        <Typography variant={sm ? "h2" : "h3"} fontWeight={500}>{title}</Typography>
+        <Typography variant={sm ? "h2" : "h3"} fontWeight={500} color="text.primary">{title}</Typography>
         <Typography variant="body1" fontWeight={500} color="secondary">
           {desc}
         </Typography>

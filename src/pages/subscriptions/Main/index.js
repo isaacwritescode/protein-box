@@ -14,12 +14,18 @@ import { ArrowCircleRight } from "iconsax-react";
 import { useState } from "react";
 import Header from "../../../components/Header";
 import PLANS from "./constants";
+import { connect } from "react-redux";
+import { showPopup } from "../../../actions/popupActions";
 
-export default function Main() {
+function Main({ showPopup }) {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   const [primeOption, setPrimeOption] = useState(false);
+
+  const handleClick = () => {
+    showPopup("form");
+  };
 
   return (
     <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
@@ -147,7 +153,7 @@ export default function Main() {
                           );
                         })}
                       </Stack>
-                      <Button variant="contained" color="primaryInverted" fluid>
+                      <Button onClick={handleClick} variant="contained" color="primaryInverted" fluid>
                         Choose this plan
                       </Button>
                     </Stack>
@@ -217,7 +223,7 @@ export default function Main() {
                           );
                         })}
                       </Stack>
-                      <Button variant="outlined" fluid>
+                      <Button variant="outlined" onClick={handleClick} fluid>
                         Choose this plan
                       </Button>
                     </Stack>
@@ -231,3 +237,5 @@ export default function Main() {
     </Box>
   );
 }
+
+export default connect(() => {}, { showPopup })(Main);

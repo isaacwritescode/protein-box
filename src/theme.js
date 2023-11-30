@@ -5,8 +5,8 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
+          color: "white",
           fontWeight: 400,
-          color: "white"
         },
         h1: {
           letterSpacing: "-5px",

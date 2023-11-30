@@ -1,6 +1,6 @@
 import Achievements from "./Achievements";
 import Locations from "./Locations";
-import Overlay from "./Overlay";
+import Overlay from "../Overlay";
 import StatBlock from "./StatBlock";
 import Features from "./features";
 import Hero from "./hero";

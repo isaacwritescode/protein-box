@@ -12,6 +12,8 @@ import Subscriptions from "./pages/subscriptions";
 import theme from "./theme";
 import { Provider } from "react-redux";
 import store from "./store";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 function App() {
   const { pathname } = useLocation();
@@ -23,7 +25,6 @@ function App() {
       window.scrollY === 0
         ? setUserHasScrolled(false)
         : setUserHasScrolled(true);
-
     };
     if (isMenuVisible) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
@@ -38,28 +39,32 @@ function App() {
     });
   }, [pathname]);
 
-
-  return <Provider store={store}>
-    <ThemeProvider theme={theme}>
-    <Routes>
-      <Route path="/"
-        element={
-          <Layout
-            isMenuVisible={isMenuVisible}
-            setIsMenuVisible={setIsMenuVisible}
-            userHasScrolled={userHasScrolled}
-          />
-        }
-      >
-        <Route index element={<Landing />} />
-        <Route path="/how-it-works" element={<HowItWorks />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/subscriptions" element={<Subscriptions />} />
-        <Route path="/contact" element={<Contact />} />
-      </Route>
-    </Routes>
-  </ThemeProvider>f
-  </Provider>
+  return (
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Layout
+                  isMenuVisible={isMenuVisible}
+                  setIsMenuVisible={setIsMenuVisible}
+                  userHasScrolled={userHasScrolled}
+                />
+              }
+            >
+              <Route index element={<Landing />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/about-us" element={<About />} />
+              <Route path="/subscriptions" element={<Subscriptions />} />
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+          </Routes>
+        </LocalizationProvider>
+      </ThemeProvider>
+    </Provider>
+  );
 }
 
 export default App;
