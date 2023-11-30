@@ -19,7 +19,7 @@ export default function Offerings() {
       />
       <Box mt={8}>
         <Marquee>
-          {FEATURES.map(({ title, desc }, idx) => {
+          {FEATURES.map(({ title, desc, gradient }, idx) => {
             const accent = theme.palette.accent.main;
             return (
               <Box
@@ -42,12 +42,20 @@ export default function Offerings() {
                 {icon}
               </Stack> */}
                 <Stack spacing={1}>
-                  <Typography variant="body1" textTransform="uppercase" color="accent.main">
+                  <Typography
+                    variant="body1"
+                    textTransform="uppercase"
+                    fontWeight={600}
+                    sx={{
+                      background: `linear-gradient(${gradient})`,
+                      backgroundClip: "text",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                  >
                     {title}
                   </Typography>
-                  <Typography variant="body2">
-                    {desc}
-                  </Typography>
+                  <Typography variant="body2">{desc}</Typography>
                 </Stack>
               </Box>
             );
