@@ -12,7 +12,6 @@ function Sponsors({ showPopup, hidePopup, visiblePopup }) {
         direction="row"
         alignItems="center"
         maxWidth={1000}
-        // bgcolor={}
         mx="auto"
         gap={{ xs: 4, md: 8 }}
         py={8}
@@ -25,7 +24,7 @@ function Sponsors({ showPopup, hidePopup, visiblePopup }) {
             data-sal="fade-up"
             data-sal-delay={idx * 100}
             sx={{ cursor: "pointer" }}
-            onClick={() => showPopup(idx)}
+            onClick={() => showPopup(idx.toString())}
           >
             <img src={icon} height={48} alt={title} width="100%" />
           </Box>

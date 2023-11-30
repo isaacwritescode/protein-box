@@ -36,7 +36,7 @@ const Overlay = ({ isPopupVisible, visiblePopup, hidePopup }) => {
           gap={2}
           position="relative"
         >
-          <Box sx={{ position: "absolute", top: "24px", right: "24px" }}>
+          <Box sx={{ position: "absolute", top: "24px", right: "24px", cursor: "pointer" }}>
             <CloseOutlined color="primary" />
           </Box>
           <img
