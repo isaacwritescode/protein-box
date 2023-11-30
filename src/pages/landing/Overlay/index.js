@@ -22,29 +22,30 @@ const Overlay = ({ isPopupVisible, visiblePopup, hidePopup }) => {
         placeItems: "center",
       }}
     >
-      <Box bgcolor="black" width={"95%"} m="auto" borderRadius={4} overflow="hidden">
-        <Stack
-          maxWidth={400}
-          sx={{ bgcolor: "#ffffff20" }}
-          textAlign="center"
-          p={8}
-          boxSizing={"border-box"}
-          gap={2}
-          position="relative"
-        >
-          <Box sx={{ position: "absolute", top: "24px", right: "24px" }}>
-            <CloseOutlined color="primary" />
-          </Box>
-          <img
-            src={SPONSORS[visiblePopup].icon}
-            style={{ width: "50%", margin: "auto" }}
-          />
-          <Typography variant="h4">{SPONSORS[visiblePopup].title}</Typography>
-          <Typography variant="body2" color="text.secondary">
-            {SPONSORS[visiblePopup].desc}
-          </Typography>
-        </Stack>
-      </Box>
+      <Stack
+        mx="auto"
+        borderRadius={4}
+        maxWidth={400}
+        width={{ xs: "95%", sm: "auto" }}
+        bgcolor="#202020"
+        textAlign="center"
+        p={8}
+        boxSizing="border-box"
+        gap={2}
+        position="relative"
+      >
+        <Box sx={{ position: "absolute", top: "24px", right: "24px" }}>
+          <CloseOutlined color="primary" />
+        </Box>
+        <img
+          src={SPONSORS[visiblePopup].icon}
+          style={{ width: "50%", margin: "auto" }}
+        />
+        <Typography variant="h4">{SPONSORS[visiblePopup].title}</Typography>
+        <Typography variant="body2" color="text.secondary">
+          {SPONSORS[visiblePopup].desc}
+        </Typography>
+      </Stack>
     </div>
   ) : null;
 };
