@@ -6,6 +6,7 @@ import Features from "./features";
 import Hero from "./hero";
 import Sponsors from "./sponsors";
 import Testimonials from "./testimonials";
+import Offerings from "./Offerings";
 
 export default function Landing() {
   return (
@@ -14,6 +15,7 @@ export default function Landing() {
       <Hero />
       <Sponsors />
       <Features />
+      <Offerings />
       <Locations />
       <Achievements />
       <StatBlock />
