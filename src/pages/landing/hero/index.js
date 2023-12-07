@@ -20,8 +20,9 @@ export default function Hero() {
           transform: "translateX(-50%)",
           zIndex: -1
         }}
+        playsInline
         preload="metadata"
-        autoPlay={true}
+        autoPlay
         loop
         muted
       >
