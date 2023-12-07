@@ -18,6 +18,7 @@ export default function Main() {
         loop
         muted
         preload="metadata"
+        playsinline
       >
         <source src="/videos/promo.mp4" type="video/mp4" />
       </video>
