@@ -8,18 +8,11 @@ import Marquee from "react-fast-marquee";
 function Sponsors({ showPopup, hidePopup, visiblePopup }) {
   return (
     <Stack width="100%" bgcolor="#1a1c1e">
-      <Stack
-        width="100%"
-        direction="row"
-        alignItems="center"
-        maxWidth={1000}
-        mx="auto"
-        py={8}
-      >
+      <Box width="100%" maxWidth={1000} mx="auto" py={8}>
         <Marquee>
           {SPONSORS.map(({ title, desc, icon }, idx) => (
             <Box
-              ml={8}
+              ml={{ xs: 4, md: 8 }}
               key={idx}
               sx={{ cursor: "pointer" }}
               onClick={() => showPopup(idx.toString())}
@@ -28,7 +21,7 @@ function Sponsors({ showPopup, hidePopup, visiblePopup }) {
             </Box>
           ))}
         </Marquee>
-      </Stack>
+      </Box>
     </Stack>
   );
 }
