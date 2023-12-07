@@ -15,6 +15,7 @@ function Sponsors({ showPopup, hidePopup, visiblePopup }) {
               ml={{ xs: 4, md: 8 }}
               key={idx}
               sx={{ cursor: "pointer" }}
+              width="fit-content"
               onClick={() => showPopup(idx.toString())}
             >
               <img src={icon} height={48} alt={title} width="100%" />
