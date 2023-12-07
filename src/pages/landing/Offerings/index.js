@@ -28,10 +28,10 @@ export default function Offerings() {
                 bgcolor="#ffffff05"
                 textAlign="center"
                 border={`1px solid #ffffff50`}
-                width={300}
+                width={280}
                 gap={4}
                 sx={{
-                  aspectRatio: "2/0.6",
+                  aspectRatio: "2/0.7",
                 }}
                 // data-sal-delay={idx * 100}
                 spacing={2}

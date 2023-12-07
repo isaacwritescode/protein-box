@@ -41,7 +41,7 @@ const PLANS = {
   ],
   prime: [
     {
-      title: "Basic",
+      title: "Prime One",
       desc: "One Meal a Day",
       price: "₹8,000",
       offer: "-20%",
@@ -50,7 +50,7 @@ const PLANS = {
       features: ["26 Rotational Meals a month", "Customizable meal options"],
     },
     {
-      title: "Standard",
+      title: "Prime Two",
       desc: "Two Meals a Day",
       price: "₹14,000",
       offer: null,
@@ -62,7 +62,7 @@ const PLANS = {
       ],
     },
     {
-      title: "Pro",
+      title: "Prime Two Plus",
       desc: "Two Meals a Day + Breakfast/Shake",
       price: "₹16,000",
       offer: null,

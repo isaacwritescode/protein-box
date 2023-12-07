@@ -3,7 +3,7 @@ import { Health, TickCircle } from "iconsax-react";
 const FEATURES = [
   {
     label: "Thumb rule",
-    title: "Weight loss and body building is 70% diet and 30% exercise",
+    title: "Fuel your greatness with every bite — Eat Like A Pro!",
     desc: "Kickstart your healthy eating journey with Protein Box",
     img: "/images/features/01.png",
     mobileImg: "/images/features/01.png",

@@ -10,6 +10,11 @@ const SPONSORS = [
     icon: "/images/sponsors/thub.svg",
   },
   {
+    title: "University of Johannesburg",
+    desc: "Protein Box has been studied in 2023 as part of a Group Syndicate Activity by the MBA students from the University of Johannesburg's Business School (JBS)",
+    icon: "/images/sponsors/jbs.svg",
+  },
+  {
     title: "Tata Social Enterprise ",
     desc: "Protein Box was ranked amongst the top 100 start-up impact proposals conducted by Tata Social Enterprise Challenge & IIM Kolkata (2022-23)",
     icon: "/images/sponsors/tata.svg",

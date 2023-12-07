@@ -11,7 +11,7 @@ const FEATURES = [
     icon: <Smileys />,
     gradient: "91deg, #FFF 18.41%, #A0A0A0 61.56%, #FFF 99%",
     title: "CORPORATE MEAL PLANS ",
-    desc: "Increase health productivity of your employees with special corporate discount with Protein Box corporate meal plans",
+    desc: "Increase health productivity of your employees with special corporate discount with corporate meal plans",
   },
   {
     icon: <Smileys />,
