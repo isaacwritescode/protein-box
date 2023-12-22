@@ -13,6 +13,12 @@ export default function Availability() {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
+  const phoneNumber = "+918605213606";
+  const message = "Hey Protein Box, May I place my order?"
+  const whatsappLink = `https://wa.me/${phoneNumber}/?text=${encodeURIComponent(
+    message
+  )}`;
+  
   return (
     <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={16}>
       <Box maxWidth={600} m="auto">
@@ -42,7 +48,14 @@ export default function Availability() {
               <>
                 <Stack spacing={4} alignItems="center" justifyContent="center">
                   <img src={icon} height={120} alt={title} />
-                  {main && <Button variant="contained">Order directly</Button>}
+                  {main && (
+                    <Button
+                      variant="contained"
+                      onClick={() => window.open(whatsappLink, "_blank")}
+                    >
+                      Order directly
+                    </Button>
+                  )}
                 </Stack>
                 {idx !== AVAILABILITY.length - 1 && sm && (
                   <Divider
