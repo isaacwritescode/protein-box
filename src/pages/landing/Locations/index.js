@@ -17,7 +17,6 @@ const Locations = () => {
           />
           <Stack
             direction={{ xs: "column", md: "row" }}
-            flexWrap="wrap"
             spacing={3}
           >
             {LOCATIONS.map(({ img, title, desc }, idx) => {
