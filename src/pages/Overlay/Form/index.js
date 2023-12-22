@@ -53,22 +53,8 @@ function Form({ hidePopup, visiblePopup }) {
     // Function to handle empty or null values
     const formatValue = (value) => (value ? value : "N/A");
 
-    const message = `
-      Hey Protein Box!
-      I'm ${formatValue(details.name)},
-      Looking for you to assist me with my fitness goals.
-      Here are my details:
-      Name: ${formatValue(details.name)}
-      Mobile Number: ${formatValue(details.mobileNumber)}
-      City: ${formatValue(details.city)}
-      Fitness Goals: ${formatValue(details.fitnessGoals)}
-      Food Type: ${formatValue(details.foodType)}
-      Subscription: ${formatValue(details.subscription)}
-      Lunch Time: ${formatValue(details.lunchTime)}
-      Dinner Time: ${formatValue(details.dinnerTime)}
-      Allergies: ${formatValue(details.allergies)}
-      Standing Instructions: ${formatValue(details.standingInstructions)}
-`;
+    const message = `Hey Protein Box!\nI'm ${formatValue(details.name)},\nLooking for you to assist me with my fitness goals.\nHere are my details:\nName: ${formatValue(details.name)}\nMobile Number: ${formatValue(details.mobileNumber)}\nCity: ${formatValue(details.city)}\nFitness Goals: ${formatValue(details.fitnessGoals)}\nFood Type: ${formatValue(details.foodType)}\nSubscription: ${formatValue(details.subscription)}\nLunch Time: ${formatValue(details.lunchTime)}\nDinner Time: ${formatValue(details.dinnerTime)}\nAllergies: ${formatValue(details.allergies)}\nStanding Instructions: ${formatValue(details.standingInstructions)}`;
+    
 
     const whatsappLink = `https://wa.me/${phoneNumber}/?text=${encodeURIComponent(
       message
