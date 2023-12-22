@@ -1,5 +1,5 @@
 import { EmailOutlined, LinkedIn, Twitter } from "@mui/icons-material";
-import { Instagram } from "iconsax-react";
+import { Facebook, Instagram, Call, Whatsapp } from "iconsax-react";
 
 export const FOOTER_LINKS = [
   {
@@ -22,23 +22,23 @@ export const FOOTER_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
-    platform: "linkedIn",
-    icon: <LinkedIn />,
-    url: "https://www.linkedin.com/company/flexibus-in/",
+    platform: "Whatsapp",
+    icon: <Whatsapp />,
+    url: "https://wa.me/+918850916053/?text=Hey Protein Box! I have a query..",
   },
   {
-    platform: "instagram",
+    platform: "Instagram",
     icon: <Instagram />,
-    url: "https://instagram.com/flexibus.in",
+    url: "https://www.instagram.com/proteinboxgoa",
   },
   {
-    platform: "Twitter",
-    icon: <Twitter />,
-    url: "https://twitter.com",
+    platform: "Facebook",
+    icon: <Facebook />,
+    url: "https://www.facebook.com/proteinboxgoa",
   },
   {
     platform: "Email",
     icon: <EmailOutlined />,
-    url: "mailto:flexibus.in@gmail.com",
+    url: "mailto:proteinboxdietcafe@gmail.com",
   },
 ];
