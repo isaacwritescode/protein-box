@@ -16,6 +16,7 @@ import Header from "../../../components/Header";
 import PLANS from "./constants";
 import { connect } from "react-redux";
 import { showPopup } from "../../../actions/popupActions";
+import { Link } from "../../../components/Link";
 
 function Main({ showPopup }) {
   const theme = useTheme();
@@ -26,6 +27,12 @@ function Main({ showPopup }) {
   const handleClick = (value) => {
     showPopup("form" + value);
   };
+
+  const phoneNumber = "+918605213606";
+  const message = "Hey Protein Box, I'd like to get a trial meal";
+  const whatsappLink = `https://wa.me/${phoneNumber}/?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={12}>
@@ -243,6 +250,15 @@ function Main({ showPopup }) {
             }
           )}
         </Grid>
+        <Box pt={8}>
+          <Typography textAlign="center">
+            Not sure about subscriptions? Get a{" "}
+            <a target="_blank" style={{ color: "yellow" }} href={whatsappLink}>
+              {" "}
+              Trial Meal{" "}
+            </a>
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
