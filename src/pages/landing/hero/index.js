@@ -18,7 +18,7 @@ export default function Hero() {
           top: 0,
           left: "50%",
           transform: "translateX(-50%)",
-          zIndex: -1
+          zIndex: -1,
         }}
         playsInline
         preload="metadata"
@@ -41,7 +41,7 @@ export default function Hero() {
         <Box>
           <img src="/images/logo.png" width="100%" />
         </Box>
-        <Typography>Protein Perfection Delivered to Your Doorstep.</Typography>
+        <Typography>Health delivered to your doorstep</Typography>
         <Link
           path="/subscriptions"
           component={<Button variant="contained">Get yours now</Button>}
