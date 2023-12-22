@@ -16,7 +16,7 @@ const SPONSORS = [
   },
   {
     title: "Tata Social Enterprise ",
-    desc: "Protein Box was ranked amongst the top 100 start-up impact proposals conducted by Tata Social Enterprise Challenge & IIM Kolkata (2022-23)",
+    desc: "Protein Box was ranked amongst the top 100 start-up impact proposals conducted by Tata Social Enterprise Challenge & IIM Kolkata (2021-22)",
     icon: "/images/sponsors/tata.svg",
   },
   {
