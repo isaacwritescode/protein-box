@@ -252,10 +252,10 @@ function Main({ showPopup }) {
         </Grid>
         <Box pt={8}>
           <Typography textAlign="center">
-            Not sure about subscriptions? Get a{" "}
+            Want to see how subscription works?{" "}
             <a target="_blank" style={{ color: "yellow" }} href={whatsappLink}>
               {" "}
-              Trial Meal{" "}
+              Get a Trial Meal{" "}
             </a>
           </Typography>
         </Box>

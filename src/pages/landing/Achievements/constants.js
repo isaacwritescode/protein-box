@@ -1,25 +1,25 @@
 const ACHIEVEMENTS = [
   {
-    img: "/images/achievements/iffi-1.jpg"
+    img: "/images/achievementsNew/01.png",
   },
   {
-    img: "/images/achievements/modi-1.jpg"
+    img: "/images/achievementsNew/02.png",
   },
   {
-    img: "/images/achievements/tr-1.jpg"
+    img: "/images/achievementsNew/03.png",
   },
   {
-    img: "/images/achievements/pitch-1.jpg"
+    img: "/images/achievementsNew/04.png",
   },
   {
-    img: "/images/achievements/pitch-2.jpg"
+    img: "/images/achievementsNew/05.png",
   },
   {
-    img: "/images/achievements/pitch-3.jpg"
+    img: "/images/achievementsNew/07.png",
   },
   {
-    img: "/images/achievements/president-1.jpg"
+    img: "/images/achievementsNew/08.png",
   },
-]
+];
 
-export default ACHIEVEMENTS
+export default ACHIEVEMENTS;

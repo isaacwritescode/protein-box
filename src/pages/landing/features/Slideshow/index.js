@@ -13,6 +13,12 @@ const Slideshow = () => {
     {
       original: "images/food/3.jpg",
     },
+    {
+      original: "images/food/4.jpg",
+    },
+    {
+      original: "images/food/5.jpg",
+    },
   ];
 
   return (

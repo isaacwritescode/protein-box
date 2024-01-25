@@ -22,8 +22,8 @@ const PLANS = {
       recommended: true,
       features: [
         "One Meal a Day (26 Meals a Month) – Rs. 6,500/-",
-        "Two Meals a Day (52 Meals a Month) – Rs. 11,000/-",
-        "High fiber content for better digestion",
+        "Two Meals a Day (52 Meals a Month) – Rs. 12,000/-",
+        "High protein corporate meals",
       ],
     },
     {
@@ -36,6 +36,7 @@ const PLANS = {
       features: [
         "One Meal a Day (26 Meals a Month) – Rs. 7,000/-",
         "Two Meals a Day (52 Meals a Month) – Rs. 12,000/-",
+        "Truly Eat Like A Pro!",
       ],
     },
   ],
@@ -47,7 +48,11 @@ const PLANS = {
       offer: "-20%",
       newPlan: false,
       recommended: false,
-      features: ["26 Rotational Meals a month", "Customizable meal options"],
+      features: [
+        "26 Rotational Meals a month",
+        "Customizable meal options",
+        "Free Delivery (Within 8Kms) & In-House Dietician Support",
+      ],
     },
     {
       title: "Prime Two",
@@ -59,18 +64,20 @@ const PLANS = {
       features: [
         "52 Rotational Meals a month",
         "Variety of cuisines available",
+        "Free Delivery (Within 8Kms) & In-House Dietician Support",
       ],
     },
     {
       title: "Prime Two Plus",
-      desc: "Two Meals a Day + Breakfast/Shake",
+      desc: "Two Meals a Day + Shake",
       price: "₹16,000",
       offer: null,
       newPlan: true,
       recommended: false,
       features: [
-        "52 Rotational Meals a month & 26 Shakes/Breakfast",
+        "52 Rotational Meals a month & 26 Hi Pro Shakes",
         "Tailored nutrition for peak performance",
+        "Free Delivery (Within 8Kms) & In-House Dietician Support",
       ],
     },
   ],

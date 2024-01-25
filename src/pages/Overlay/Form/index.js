@@ -129,6 +129,7 @@ function Form({ hidePopup, visiblePopup }) {
               <MenuItem value="Nagpur">Nagpur</MenuItem>
               <MenuItem value="Goa">Goa</MenuItem>
               <MenuItem value="Gurugram">Gurugram</MenuItem>
+              <MenuItem value="Hyderabad">Hyderabad</MenuItem>
             </Select>
           </FormControl>
           <Stack spacing={1}>

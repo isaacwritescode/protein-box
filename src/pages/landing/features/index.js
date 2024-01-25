@@ -12,6 +12,7 @@ export default function Features() {
             data-sal="fade-up"
             direction={{ xs: "column", md: "row" }}
             spacing={{ xs: 3, md: 6 }}
+            mb={4}
             alignItems="center"
           >
             <Stack alignItems="start" gap={1} flex={2}>

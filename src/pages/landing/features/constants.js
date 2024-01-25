@@ -2,7 +2,7 @@ import { Health, TickCircle } from "iconsax-react";
 
 const FEATURES = [
   {
-    label: "Thumb rule",
+    label: "Power your workout",
     title: "Fuel your greatness with every bite — Eat Like A Pro!",
     desc: "Kickstart your healthy eating journey with Protein Box",
     img: "/images/features/01.png",
