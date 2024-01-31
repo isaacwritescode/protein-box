@@ -14,6 +14,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import Franchisee from "./pages/franchisee";
 
 function App() {
   const { pathname } = useLocation();
@@ -59,6 +60,7 @@ function App() {
               <Route path="/about-us" element={<About />} />
               <Route path="/subscriptions" element={<Subscriptions />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/franchisee" element={<Franchisee />} />
             </Route>
           </Routes>
         </LocalizationProvider>
