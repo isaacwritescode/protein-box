@@ -5,9 +5,9 @@ const Card = ({ title, desc, src, isVeg, isNew }) => {
     <Stack
       spacing={4}
       bgcolor="grey.900"
-      p={8}
       boxSizing="border-box"
       flex={1}
+      p={8}
       borderRadius={4}
       textAlign="center"
       justifyContent="center"
