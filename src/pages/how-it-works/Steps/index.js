@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Header from "../../../components/Header";
-import STEPS from "./constants"
+import STEPS from "./constants";
 
 export default function Steps() {
   return (
@@ -9,11 +9,11 @@ export default function Steps() {
         label="Try it now"
         title="Get your protein box in 3 simple steps"
       />
-      <Stack direction="row" mt={8} spacing={3}>
+      <Stack direction={{ xs: "column", sm: "row" }} mt={8} spacing={3}>
         {STEPS.map(({ title, desc, img }, idx) => {
           return (
             <Stack spacing={2} flex={1} position="relative">
-              <Stack
+              {/* <Stack
                 bgcolor="yellow"
                 width={48}
                 justifyContent="center"
@@ -30,7 +30,7 @@ export default function Steps() {
                 <Typography variant="h6" color="black">
                   {idx + 1}
                 </Typography>
-              </Stack>
+              </Stack> */}
               <Stack
                 borderRadius={8}
                 flex={1}
@@ -43,7 +43,9 @@ export default function Steps() {
                 <img src={img} width="100%" />
               </Stack>
               <Stack spacing={0.5}>
-                <Typography variant="body1">{title}</Typography>
+                <Typography variant="body1">
+                  {idx + 1 + ". " + title}
+                </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {desc}
                 </Typography>
