@@ -1,6 +1,6 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import Header from "../../../components/Header";
-import BENEFITS from "./constants";
+import { BENEFITS, OTHER_BENEFITS } from "./constants";
 
 const Benefits = () => {
   return (
@@ -29,8 +29,28 @@ const Benefits = () => {
             </Stack>
           );
         })}
-        f
       </Stack>
+      <Grid container spacing={8} mt={4} columns={{ xs: 6, sm: 12 }}>
+        {OTHER_BENEFITS.map(({ icon, title }, idx) => {
+          return (
+            <Grid item xs={3} key={idx}>
+              <Stack alignItems="center" spacing={2}>
+                <Stack
+                  sx={{ aspectRatio: "1/1" }}
+                  borderRadius={10}
+                  width={72}
+                  bgcolor="accent.main"
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  {icon}
+                </Stack>
+                <Typography variant="body1">{title}</Typography>
+              </Stack>
+            </Grid>
+          );
+        })}
+      </Grid>
     </Box>
   );
 };

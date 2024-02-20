@@ -19,6 +19,9 @@ const Slideshow = () => {
     {
       original: "images/food/5.jpg",
     },
+    {
+      original: "images/food/6.jpg",
+    },
   ];
 
   return (

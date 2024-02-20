@@ -1,3 +1,5 @@
+import { Smileys } from "iconsax-react";
+
 const BENEFITS = [
   {
     label: "Low investment",
@@ -13,5 +15,39 @@ const BENEFITS = [
   },
 ];
 
+const OTHER_BENEFITS = [
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+  {
+    icon: <Smileys />,
+    title: "Benfit",
+  },
+];
 
-export default BENEFITS;
+export { BENEFITS, OTHER_BENEFITS };

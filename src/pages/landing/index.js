@@ -16,9 +16,9 @@ export default function Landing() {
       <Sponsors />
       <Features />
       <Offerings />
-      <StatBlock />
       <Locations />
       <Achievements />
+      <StatBlock />
       <Testimonials />
     </>
   );

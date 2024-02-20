@@ -44,7 +44,7 @@ const PLANS = {
     {
       title: "Prime One",
       desc: "One Meal a Day",
-      price: "₹8,000",
+      price: "₹8,500",
       offer: "-20%",
       newPlan: false,
       recommended: false,
@@ -57,7 +57,7 @@ const PLANS = {
     {
       title: "Prime Two",
       desc: "Two Meals a Day",
-      price: "₹14,000",
+      price: "₹15,000",
       offer: null,
       newPlan: false,
       recommended: true,
@@ -70,7 +70,7 @@ const PLANS = {
     {
       title: "Prime Two Plus",
       desc: "Two Meals a Day + Shake",
-      price: "₹16,000",
+      price: "₹17,000",
       offer: null,
       newPlan: true,
       recommended: false,

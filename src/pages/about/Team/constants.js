@@ -6,18 +6,6 @@ const TEAM = [
     img: "/images/team/utpal-ghosh.jpg",
   },
   {
-    name: "Payel Banerjee",
-    designation: "Head - Marketing & Data Strategy",
-    desc: "MS (Integrated Marketing Communication), Northwestern University, USA. MBA in Marketing, ITM (Mumbai)",
-    img: "/images/team/payel-banerjee.jpg",
-  },
-  {
-    name: "Pranab Banerjee",
-    designation: "pranab-banerjee",
-    desc: "MS (Mechanical & Aerospace Engg.) University of Texas, USA",
-    img: "/images/team/pranab-banerjee.jpg",
-  },
-  {
     name: "Anand Dhutraj",
     designation: "Chief Mentor",
     desc: "An IIT (Bombay), IIM (Kolkata) Alumnus, 20+ years of experience",

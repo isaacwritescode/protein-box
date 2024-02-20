@@ -12,7 +12,7 @@ export const LOCATIONS = [
     img: "/images/locations/nagpur.jpg",
   },
   {
-    title: "Gurugram",
-    img: "/images/locations/gurugram.jpeg",
+    title: "Kolkata",
+    img: "/images/locations/kolkata.jpg",
   },
 ];

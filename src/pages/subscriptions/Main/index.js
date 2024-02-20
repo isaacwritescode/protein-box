@@ -16,7 +16,6 @@ import Header from "../../../components/Header";
 import PLANS from "./constants";
 import { connect } from "react-redux";
 import { showPopup } from "../../../actions/popupActions";
-import { Link } from "../../../components/Link";
 
 function Main({ showPopup }) {
   const theme = useTheme();
@@ -253,7 +252,12 @@ function Main({ showPopup }) {
         <Box pt={8}>
           <Typography textAlign="center">
             Want to see how subscription works?{" "}
-            <a target="_blank" style={{ color: "yellow" }} href={whatsappLink}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "yellow" }}
+              href={whatsappLink}
+            >
               {" "}
               Get a Trial Meal{" "}
             </a>

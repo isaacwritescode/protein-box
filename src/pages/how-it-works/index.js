@@ -1,13 +1,10 @@
 import FAQ from "../landing/FAQ";
-import Bestsellers from "./Bestsellers";
-import OrderBlock from "./OrderBlock";
-import Stepline from "./Steps";
+import Stepline from "./Stepline";
 
 export default function HowItWorks() {
   return <>
     <Stepline />
-    <Bestsellers />
-    <OrderBlock />
     <FAQ />
+    
   </>
 }
