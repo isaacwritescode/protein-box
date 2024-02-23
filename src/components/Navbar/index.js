@@ -19,6 +19,7 @@ const Navbar = ({
 }) => {
   const theme = useTheme();
   const md = useMediaQuery(theme.breakpoints.up("md"));
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <Box
@@ -32,7 +33,7 @@ const Navbar = ({
       borderRadius={100}
       sx={{
         position: "fixed",
-        top: visibleNews ? "36px" : "24px",
+        top: visibleNews ? (sm ? "36px" : "64px") : "24px",
         left: "50%",
         transform: "translateX(-50%)",
         transition: "all ease 0.3s",

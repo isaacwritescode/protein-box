@@ -6,12 +6,16 @@ import {
   IconButton,
   Stack,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { hideNews } from "../../actions/popupActions";
 import { connect } from "react-redux";
+import { useTheme } from "@emotion/react";
 
 const News = ({ hideNews, visibleNews }) => {
-  console.log({ visibleNews });
+  const theme = useTheme();
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
     <Box
       className={visibleNews || "shrink-out"}
@@ -28,7 +32,12 @@ const News = ({ hideNews, visibleNews }) => {
         <Grid item xs={1}></Grid>
         <Grid item xs={10}>
           <Box mx="auto" width="fit-content">
-            <Stack direction="row" spacing={1}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              alignItems="center"
+              py={{ xs: 1, sm: 0 }}
+              spacing={{ xs: 0.5, sm: 1 }}
+            >
               <Typography variant="body2" color="primaryInverted.main">
                 We got featured on Startup Stories 🎉
               </Typography>
@@ -54,12 +63,23 @@ const News = ({ hideNews, visibleNews }) => {
           </Box>
         </Grid>
         <Grid item xs={1}>
-          <IconButton
-            onClick={() => hideNews()}
-            sx={{ color: "primaryInverted.main" }}
-          >
-            <Close />
-          </IconButton>
+          {sm ? (
+            <IconButton
+              onClick={() => hideNews()}
+              sx={{ color: "primaryInverted.main" }}
+            >
+              <Close />
+            </IconButton>
+          ) : (
+            <Box position="absolute" top={0} right={8}>
+              <IconButton
+                onClick={() => hideNews()}
+                sx={{ color: "primaryInverted.main" }}
+              >
+                <Close />
+              </IconButton>
+            </Box>
+          )}
         </Grid>
       </Grid>
     </Box>
