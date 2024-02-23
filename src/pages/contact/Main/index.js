@@ -70,7 +70,7 @@ const Contact = () => {
         <Typography variant={sm ? "h2" : "h3"}>Get in touch</Typography>
       </Stack>
       <Box my={4} maxWidth={800} data-sal="fade-up">
-        <form name="contact">
+        <form name="contact" netlify>
           <input type="hidden" name="form-name" value="contact" />
           <Stack spacing={4} borderRadius={2} width="100%">
             <Stack direction="row" spacing={2}>

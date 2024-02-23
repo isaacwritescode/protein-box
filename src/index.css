@@ -75,6 +75,12 @@ body {
   transform: scale(0) !important;
 }
 
+.shrink-out {
+  visibility: visible !important;
+  opacity: 0 !important;
+  height: 0;
+}
+
 .fade-up {
   opacity: 0 !important;
   transform: translateY(80px) !important;
