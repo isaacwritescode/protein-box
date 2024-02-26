@@ -2,7 +2,7 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 
 const VideoSection = () => {
   return (
-    <Box bgcolor="#ffffff05" py={{ xs: 8, md: 16 }}>
+    <Box bgcolor="#ffffff05" mt={8} py={{ xs: 8, md: 16 }}>
       <Box width={{ xs: "90%" }} maxWidth={1000} mx="auto">
         <Grid
           container
