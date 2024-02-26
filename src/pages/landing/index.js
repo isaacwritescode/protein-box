@@ -7,6 +7,7 @@ import Hero from "./hero";
 import Sponsors from "./sponsors";
 import Testimonials from "./testimonials";
 import Offerings from "./Offerings";
+import Video from "./Video";
 
 export default function Landing() {
   return (
@@ -17,6 +18,7 @@ export default function Landing() {
       <Features />
       <Offerings />
       <Locations />
+      <Video />
       <Achievements />
       <StatBlock />
       <Testimonials />
