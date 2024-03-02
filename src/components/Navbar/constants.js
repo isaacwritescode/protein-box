@@ -7,10 +7,10 @@ export const NAVBAR_LINKS = [
     title: "Subscriptions",
     path: "/subscriptions",
   },
-  // {
-  //   title: "Franchisee",
-  //   path: "/franchisee",
-  // },
+  {
+    title: "Franchisee",
+    path: "/franchisee",
+  },
   {
     title: "About Us",
     path: "/about-us",

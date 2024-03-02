@@ -93,7 +93,7 @@ const theme = createTheme({
     },
     accent: {
       light: "#F4DC0B10",
-      main: "#F4DC0B",
+      main: "#F8C300",
       contrastText: "#000000",
     },
     red: {

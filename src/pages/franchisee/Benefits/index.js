@@ -10,6 +10,7 @@ const Benefits = () => {
         {BENEFITS.map(({ label, title }, idx) => {
           return (
             <Stack
+              key={idx}
               flex={1}
               spacing={1}
               textAlign="center"
@@ -31,21 +32,14 @@ const Benefits = () => {
         })}
       </Stack>
       <Grid container spacing={8} mt={4} columns={{ xs: 6, sm: 12 }}>
-        {OTHER_BENEFITS.map(({ icon, title }, idx) => {
+        {OTHER_BENEFITS.map(({ img, title }, idx) => {
           return (
             <Grid item xs={3} key={idx}>
               <Stack alignItems="center" spacing={2}>
-                <Stack
-                  sx={{ aspectRatio: "1/1" }}
-                  borderRadius={10}
-                  width={72}
-                  bgcolor="accent.main"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  {icon}
-                </Stack>
-                <Typography variant="body1">{title}</Typography>
+                <img src={img} alt={title} width={72} />
+                <Typography textAlign="center" variant="body1">
+                  {title}
+                </Typography>
               </Stack>
             </Grid>
           );

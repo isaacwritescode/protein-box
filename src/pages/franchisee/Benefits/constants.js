@@ -1,5 +1,3 @@
-import { Smileys } from "iconsax-react";
-
 const BENEFITS = [
   {
     label: "Low investment",
@@ -17,36 +15,36 @@ const BENEFITS = [
 
 const OTHER_BENEFITS = [
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/low-investment.svg",
+    title: "Low Investment",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/quick-service.svg",
+    title: "Quick Service",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/emi.svg",
+    title: "EMI Available",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/no-chef.svg",
+    title: "No Chef Required",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/professional-team.svg",
+    title: "Professional Team Backup",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/hassle-free.svg",
+    title: "Hassle Free",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/zero-wastage.svg",
+    title: "Zero Wastage",
   },
   {
-    icon: <Smileys />,
-    title: "Benfit",
+    img: "images/franchisee/easy-operation.svg",
+    title: "Easy Operation",
   },
 ];
 
