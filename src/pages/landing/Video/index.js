@@ -13,7 +13,7 @@ const VideoSection = () => {
         >
           <Grid item xs={5}>
             <Stack spacing={0.5}>
-              <Typography variant="h3">A message from the Founder</Typography>
+              <Typography variant="h3">Message from the Founder</Typography>
               <Typography variant="body1" color="text.secondary">
                 Join Founder Utpal Ghosh as he shares the story behind this
                 innovative venture, paving the way for a healthier and more

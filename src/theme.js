@@ -29,8 +29,8 @@ const theme = createTheme({
           letterSpacing: "-0.5px",
         },
         caption: {
-          letterSpacing: "-0.4px"
-        }
+          letterSpacing: "-0.4px",
+        },
       },
     },
     MuiButton: {
@@ -38,18 +38,18 @@ const theme = createTheme({
         root: {
           borderRadius: "100px",
           boxShadow: "none",
-          textTransform: "none"
+          textTransform: "none",
         },
         sizeSmall: {
-          padding: "8px 12px"
+          padding: "8px 12px",
         },
         sizeMedium: {
-          padding: "12px 16px"
+          padding: "12px 16px",
         },
         sizeLarge: {
-          padding: "14px 20px"
-        }
-      }
+          padding: "14px 20px",
+        },
+      },
     },
     MuiChip: {
       styleOverrides: {
@@ -61,9 +61,18 @@ const theme = createTheme({
         },
         sizeLarge: {
           height: "32px",
-        }
-      }
-    }
+        },
+      },
+    },
+    MuiBadge: {
+      styleOverrides: {
+        badge: {
+          height: 28,
+          fontSize: 14,
+          borderRadius: 100
+        },
+      },
+    },
   },
   typography: {
     fontFamily: "Axiforma-Private",
@@ -72,30 +81,30 @@ const theme = createTheme({
     mode: "dark",
     primary: {
       main: "#ffffff",
-      contrastText: "#000000"
+      contrastText: "#000000",
     },
     primaryInverted: {
       main: "#000000",
-      contrastText: "#ffffff"
+      contrastText: "#ffffff",
     },
     secondary: {
       main: "#8F9193",
-      inverted: "rgba(0,0,0,0.7)"
+      inverted: "rgba(0,0,0,0.7)",
     },
     accent: {
       light: "#F4DC0B10",
       main: "#F4DC0B",
-      contrastText: "#000000"
+      contrastText: "#000000",
     },
     red: {
       main: "#F61067",
-      contrastText: "#ffffff"
+      contrastText: "#ffffff",
     },
     green: {
       main: "#55A61B",
-      contrastText: "#ffffff"
+      contrastText: "#ffffff",
     },
-  }
+  },
 });
 
 export default theme;
