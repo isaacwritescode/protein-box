@@ -1,7 +1,5 @@
 import StatBlock from "../landing/StatBlock";
 import EventsCollage from "./EventsCollage";
-import HealthyCorner from "./HealthyCorner";
-import HostEvent from "./HostEvent";
 import Main from "./Main";
 import Team from "./Team";
 
@@ -12,6 +10,6 @@ export default function About() {
     {/* <HealthyCorner /> */}
     <Team />
     <EventsCollage />
-    <HostEvent />
+    {/* <HostEvent /> */}
   </>
 }

@@ -1,5 +1,6 @@
 import Sponsors from "../landing/sponsors";
 import Benefits from "./Benefits";
+import Form from "./Form";
 import Intro from "./Intro";
 
 const Franchisee = () => {
@@ -8,6 +9,7 @@ const Franchisee = () => {
       <Intro />
       <Sponsors />
       <Benefits />
+      <Form />
     </>
   );
 };
