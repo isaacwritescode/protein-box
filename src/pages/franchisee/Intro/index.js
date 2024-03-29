@@ -14,7 +14,7 @@ const Intro = () => {
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <Box maxWidth={1000} m="auto" width={{ xs: "90%", md: "100%" }} pt={6}>
+    <Box maxWidth={1000} m="auto" width={"90%"} pt={16}>
       <Grid
         container
         columns={{ xs: 5, md: 12 }}
