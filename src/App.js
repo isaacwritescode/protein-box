@@ -15,6 +15,7 @@ import store from "./store";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Franchisee from "./pages/franchisee";
+import Terms from "./pages/terms";
 
 function App() {
   const { pathname } = useLocation();
@@ -61,6 +62,7 @@ function App() {
               <Route path="/subscriptions" element={<Subscriptions />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/franchisee" element={<Franchisee />} />
+              <Route path="/terms" element={<Terms />} />
             </Route>
           </Routes>
         </LocalizationProvider>

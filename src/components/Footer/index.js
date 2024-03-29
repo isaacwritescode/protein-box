@@ -66,7 +66,7 @@ const Footer = () => {
           ©Protein box 2023
         </Typography>
         <Link
-          path="privacy"
+          path="terms"
           component={
             <Typography variant="body1" color="text.secondary" fontWeight={500}>
               Privacy & Terms
