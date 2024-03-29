@@ -4,7 +4,6 @@ const BESTSELLERS = [
     desc: "Description",
     isVeg: true,
     isNew: true,
-    price: 190,
     src: "/images/bestsellers/grilled-paneer.png",
   },
   {
@@ -12,7 +11,6 @@ const BESTSELLERS = [
     desc: "Description",
     isVeg: true,
     isNew: true,
-    price: 190,
     src: "/images/bestsellers/paneer-post-workout-meal.png",
   },
   {
@@ -20,7 +18,6 @@ const BESTSELLERS = [
     desc: "Description",
     isVeg: true,
     isNew: true,
-    price: 190,
     src: "/images/bestsellers/paneer-salad.png",
   },
   {
@@ -28,7 +25,6 @@ const BESTSELLERS = [
     desc: "Description",
     isVeg: false,
     isNew: true,
-    price: 190,
     src: "/images/bestsellers/grilled-chicken-with-salad.png",
   },
   {
@@ -36,7 +32,6 @@ const BESTSELLERS = [
     desc: "Description",
     isVeg: false,
     isNew: true,
-    price: 190,
     src: "/images/bestsellers/chicken-post-workout-meal.png",
   },
   {
@@ -44,7 +39,6 @@ const BESTSELLERS = [
     desc: "Description",
     isVeg: false,
     isNew: true,
-    price: 190,
     src: "/images/bestsellers/chicken-salad.png",
   },
 ];

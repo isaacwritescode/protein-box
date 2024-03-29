@@ -1,6 +1,6 @@
 import { Stack, Typography, Box, Badge } from "@mui/material";
 
-const Card = ({ title, desc, src, isVeg, isNew }) => {
+const Card = ({ title, desc, src, isVeg, isNew, price }) => {
   return (
     <Stack
       spacing={4}
@@ -17,7 +17,8 @@ const Card = ({ title, desc, src, isVeg, isNew }) => {
     >
       <Badge
         color="accent"
-        badgeContent="₹190"
+        invisible={!price}
+        badgeContent={"₹" + price}
         overlap="circular"
         anchorOrigin={{
           vertical: "bottom",

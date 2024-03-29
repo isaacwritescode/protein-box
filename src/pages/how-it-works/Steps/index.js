@@ -16,17 +16,19 @@ export default function Steps() {
       >
         {STEPS.map(({ title, desc, img }, idx) => {
           return (
-            <Stack spacing={3} flex={1} position="relative">
-              <img src={img} width="100%" />
-              <Stack spacing={0.5}>
-                <Typography variant="body1">
-                  {idx + 1 + ". " + title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {desc}
-                </Typography>
+            <Box key={idx} flex={1} data-sal="slide-up" data-sal-delay={idx * 100}>
+              <Stack spacing={3} flex={1} position="relative">
+                <img src={img} width="100%" alt="" />
+                <Stack spacing={0.5}>
+                  <Typography variant="body1">
+                    {idx + 1 + ". " + title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {desc}
+                  </Typography>
+                </Stack>
               </Stack>
-            </Stack>
+            </Box>
           );
         })}
       </Stack>

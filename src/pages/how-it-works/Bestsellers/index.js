@@ -15,7 +15,9 @@ const Bestsellers = () => {
         >
           {BESTSELLERS.map((elem, idx) => (
             <Grid item xs={4} idx={idx}>
-              <Card {...elem} />
+              <Box data-sal="slide-up" height="100%" data-sal-delay={idx * 100}>
+                <Card {...elem} />
+              </Box>
             </Grid>
           ))}
         </Grid>
