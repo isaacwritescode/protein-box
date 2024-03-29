@@ -48,4 +48,63 @@ const OTHER_BENEFITS = [
   },
 ];
 
-export { BENEFITS, OTHER_BENEFITS };
+const PB_RESPONSIBILITIES = [
+  {
+    img: "images/franchisee/easy-operation.svg",
+    title: "Kitchen Setup",
+  },
+  {
+    img: "images/franchisee/professional-team.svg",
+    title: "Staff Training",
+  },
+  {
+    img: "images/franchisee/vendor.svg",
+    title: "Material & Vendor Management",
+  },
+  {
+    img: "images/franchisee/sop.svg",
+    title: "60 days supervision",
+  },
+  {
+    img: "images/franchisee/logistics.svg",
+    title: "Logistics Setup",
+  },
+  {
+    img: "images/franchisee/branding.svg",
+    title: "Digital Branding",
+  },
+];
+
+const FRANCHISEE_RESPONSIBILITIES = [
+  {
+    img: "images/franchisee/low-investment.svg",
+    title: "Capitalizaton Expenses",
+  },
+  {
+    img: "images/franchisee/quick-service.svg",
+    title: "Compliance & Legal",
+  },
+  {
+    img: "images/franchisee/marketing.svg",
+    title: "Marketing & Maintenence Expenses",
+  },
+  {
+    img: "images/franchisee/location.svg",
+    title: "Prime location space",
+  },
+  {
+    img: "images/franchisee/menu.svg",
+    title: "Strictly Adherence to Menu",
+  },
+  {
+    img: "images/franchisee/sop.svg",
+    title: "Following PB SOPs",
+  },
+];
+
+export {
+  BENEFITS,
+  OTHER_BENEFITS,
+  PB_RESPONSIBILITIES,
+  FRANCHISEE_RESPONSIBILITIES,
+};

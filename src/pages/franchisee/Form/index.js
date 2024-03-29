@@ -11,7 +11,7 @@ const INCLUSIVES = [
 
 const Form = () => {
   return (
-    <Box maxWidth={1000} width="90%" mt={16} mx="auto">
+    <Box maxWidth={1000} width="90%" mt={24} mx="auto">
       <Header label="Start a franchise" title="Ready to start a Revolution?" />
       <Box
         bgcolor="#ffffff07"
@@ -27,12 +27,12 @@ const Form = () => {
           columnSpacing={8}
         >
           <Grid item xs={6}>
-            <Stack spacing={1}>
+            <Stack spacing={2}>
               <Typography variant="h4">
                 Fill out this form and we'll do an opertunity analysis of your
                 store
               </Typography>
-              <Typography variant="h6">Process includes:</Typography>
+              <Typography variant="body2">Process includes</Typography>
               {INCLUSIVES.map((elem, idx) => {
                 return (
                   <Stack
@@ -49,7 +49,7 @@ const Form = () => {
             </Stack>
             <Typography variant="h6" mt={2}>
               <Box component="span" color="accent.main" fontSize={32}>
-                80-200
+              300-500
               </Box>{" "}
               ft required
             </Typography>
