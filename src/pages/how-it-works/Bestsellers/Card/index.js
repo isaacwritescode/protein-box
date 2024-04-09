@@ -8,6 +8,7 @@ const Card = ({ title, desc, src, isVeg, isNew, price }) => {
       boxSizing="border-box"
       flex={1}
       p={8}
+      px={4}
       borderRadius={4}
       textAlign="center"
       justifyContent="center"
@@ -25,7 +26,7 @@ const Card = ({ title, desc, src, isVeg, isNew, price }) => {
           horizontal: "right",
         }}
       >
-        <img src={src} width="100%" alt={title} />
+        <img src={src} width="80%" style={{ margin: "auto" }} alt={title} />
       </Badge>
       <Box width="fit-content" sx={{ position: "absolute", top: 4, right: 24 }}>
         <img

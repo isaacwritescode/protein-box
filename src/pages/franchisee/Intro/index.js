@@ -37,16 +37,16 @@ const Intro = () => {
             </Typography>
             <Stack direction="row" spacing={4} py={2}>
               <Stack spacing={0.5}>
-                <Typography variant="h6">1 Crore+</Typography>
+                <Typography variant="h6">50,000+</Typography>
                 <Typography variant="body2" color="text.secondary">
                   meals sold
                 </Typography>
               </Stack>
               <Divider flexItem orientation="vertical" />
               <Stack spacing={0.5}>
-                <Typography variant="h6">20 lakh</Typography>
+                <Typography variant="h6">4.5/5</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  customers satisfied
+                  Average rating
                 </Typography>
               </Stack>
             </Stack>
@@ -54,7 +54,7 @@ const Intro = () => {
           </Stack>
         </Grid>
         <Grid item xs={5}>
-          <img src="/images/rectangular-placeholder.png" width="100%" />
+          <img src="/images/rectangular-placeholder.png" width="100%" alt="" />
         </Grid>
       </Grid>
     </Box>
