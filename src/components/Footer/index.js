@@ -62,7 +62,7 @@ const Footer = () => {
             textAlign={{ xs: "left", md: "center" }}
           >
             <Typography variant="body1" color="text.primary" fontWeight={500}>
-              ©Protein box 2023
+              ©Protein box {new Date().getFullYear()}
             </Typography>
             <Link
               path="terms"
