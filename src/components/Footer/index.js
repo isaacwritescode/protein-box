@@ -88,7 +88,7 @@ const Footer = () => {
               rel="noreferrer"
             >
               <Typography style={{ fontWeight: 300 }} textAlign="center">
-                Made with ❤️ by DevGeeks Agency
+                Made with ❤️ by <u>DevGeeks</u> Agency
               </Typography>
             </a>
           </Box>
