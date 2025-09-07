@@ -30,7 +30,7 @@ const Slideshow = () => {
         showBullets={true}
         infinite
         autoPlay
-        slideDuration={2000}
+        slideDuration={400}
         showPlayButton={false}
         showFullscreenButton={false}
         showNav={false}

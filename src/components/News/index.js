@@ -20,7 +20,7 @@ const News = ({ hideNews, visibleNews }) => {
     <Box
       className={visibleNews || "shrink-out"}
       sx={{
-        bgcolor: "#D2BF0D",
+        bgcolor: "#f4dc0b",
         position: "fixed",
         top: 0,
         width: "100%",
