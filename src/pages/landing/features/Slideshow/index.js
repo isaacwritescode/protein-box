@@ -5,22 +5,22 @@ import { Box } from "@mui/material";
 const Slideshow = () => {
   const images = [
     {
-      original: "images/product/1.jpg",
+      original: "images/food/1.jpg",
     },
     {
-      original: "images/product/2.jpg",
+      original: "images/food/2.jpg",
     },
     {
-      original: "images/product/3.jpg",
+      original: "images/food/3.jpg",
     },
     {
-      original: "images/product/4.jpg",
+      original: "images/food/4.jpg",
     },
     {
-      original: "images/product/5.jpg",
+      original: "images/food/5.jpg",
     },
     {
-      original: "images/product/6.jpg",
+      original: "images/food/6.jpg",
     },
   ];
 
