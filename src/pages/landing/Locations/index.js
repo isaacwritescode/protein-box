@@ -25,7 +25,7 @@ const Locations = () => {
                 >
                   <img
                     width="100%"
-                    style={{ borderRadius: 8, aspectRatio: "2/1.5" }}
+                    style={{ borderRadius: 24, aspectRatio: "2/1.5" }}
                     src={img}
                     alt={title}
                   />

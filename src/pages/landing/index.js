@@ -18,7 +18,7 @@ export default function Landing() {
       <Features />
       <Offerings />
       <Locations />
-      <Video />
+      {/* <Video /> */}
       <Achievements />
       <StatBlock />
       <Testimonials />
